@@ -19,7 +19,7 @@ const FAMILY = {
 }
 
 const SIZE = {
-  S: "0.875em",
+  S: "0.8em",
   M: "1em",
   L: "1.25em",
   XL: "1.5em",
@@ -27,7 +27,8 @@ const SIZE = {
 }
 
 const WEIGHT = {
-  REGULAR: 400,
+  NORMAL: 400,
+  MEDIUM: 500,
   BOLD: 700,
 }
 

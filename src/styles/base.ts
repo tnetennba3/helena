@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
   textarea {
     font-family: ${FONT.FAMILY.BODY};
     font-size: ${FONT.SIZE.M};
-    font-weight: ${FONT.WEIGHT.REGULAR};
+    font-weight: ${FONT.WEIGHT.NORMAL};
     -webkit-font-smoothing: antialiased;
     color: ${COLOR.TEXT};
   }
@@ -38,21 +38,31 @@ const GlobalStyle = createGlobalStyle`
     position: relative;
     color: inherit;
     text-decoration: none;
+
     &:focus, &:active {
       outline: 2px dashed ${COLOR.ACCENT.DARK_GREY};
     }
-    &:hover {
-      font-weight: ${FONT.WEIGHT.BOLD};
-    }
   }
 
-  h1 {
-    font-size: ${FONT.SIZE.XL};
+  h1, h2 {
+    margin: 0.25em 0 0.75em !important;
   }
 
   h2 {
     font-size: ${FONT.SIZE.L};
+    font-weight: ${FONT.WEIGHT.MEDIUM};
   }
+
+  p {
+    line-height: 1.75;
+  }
+
+  ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
 `
 
 export default GlobalStyle
