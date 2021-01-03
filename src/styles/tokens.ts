@@ -7,9 +7,10 @@ export const COLOR = {
   },
 
   ACCENT: {
-    GREY: "#E5E5E5",
     BLUE: "#B5DEF5",
     YELLOW: "#FDECBD",
+    LIGHT_GREY: "#E5E5E5",
+    DARK_GREY: "#494949",
   },
 }
 
@@ -37,6 +38,6 @@ export const FONT = {
 }
 
 export const BREAKPOINT = {
-  S: "640px",
+  M: "640px",
   L: "1024px",
 }

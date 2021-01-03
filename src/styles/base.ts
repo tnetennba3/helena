@@ -1,12 +1,13 @@
 import { createGlobalStyle } from "styled-components"
+
 import { COLOR, FONT, BREAKPOINT } from "./tokens"
 
 const GlobalStyle = createGlobalStyle`
   html {
     width: 100%;
-
     font-size: 16px;
-    @media (min-width: ${BREAKPOINT.S}) {
+
+    @media (min-width: ${BREAKPOINT.M}) {
       font-size: 20px;
     }
     @media (min-width: ${BREAKPOINT.L}) {
@@ -38,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
     color: inherit;
     text-decoration: none;
     &:focus, &:active {
-      outline: 2px dashed ${COLOR.ACCENT.BLUE};
+      outline: 2px dashed ${COLOR.ACCENT.DARK_GREY};
     }
     &:hover {
       font-weight: ${FONT.WEIGHT.BOLD};
