@@ -2,9 +2,9 @@ import React from "react"
 import styled from "styled-components"
 
 import { BREAKPOINT, COLOR } from "../styles/tokens"
+import Layout from "../components/layout"
 import mediumBackground from "../images/helena-m.png"
 import largeBackground from "../images/helena-l.png"
-import Layout from "../components/layout"
 
 const Background = styled.div`
   height: 100vh;
@@ -38,7 +38,7 @@ const Heading = styled.div`
   }
 `
 
-const IndexPage = () => (
+const Home = () => (
   <Background>
     <Svg viewBox="0 0 100 100" preserveAspectRatio="none">
       <polygon fill={COLOR.BACKGROUND.BLUE} points="0,100 100,70 100,0 0,0" />
@@ -55,4 +55,4 @@ const IndexPage = () => (
   </Background>
 )
 
-export default IndexPage
+export default Home
