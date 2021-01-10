@@ -4,17 +4,14 @@ import styled from "styled-components"
 
 import { COLOR } from "../../styles/tokens"
 import Layout from "../../components/layout"
-import chart from "../../images/chart-by-chapter.png"
+import coverImage from "./i-read-my-first-book-in-japanese/images/cover.png"
 
 const Article = styled.article`
+  margin-top: 1rem;
+  padding: 2px;
   box-shadow: 0 0 0.5rem ${COLOR.ACCENT.LIGHT_GREY};
   background-color: ${COLOR.ACCENT.LIGHT_GREY};
   border-radius: 2px;
-  padding: 2px;
-`
-
-const Img = styled.img`
-  width: 100%;
 `
 
 const ArticleLink = styled(Link)`
@@ -35,21 +32,25 @@ const Blog = () => (
     <h1>This is where I write about stuff.</h1>
     <ol>
       <li>
-        <ArticleLink to="/blog/my-first-blog">
+        <ArticleLink to="/blog/i-read-my-first-book-in-japanese">
           <Article>
-            <Img src={chart} alt="Lorem ipsum dolor sit amet dolor sit amet" />
+            <img src={coverImage} alt="Unlabelled graph" />
             <ArticleText>
-              <h2>Lorem ipsum dolor sit amet dolor sit amet</h2>
+              <h2>I read my first book in Japanese 🎉</h2>
+              <p>
+                My 2020 goal was to read Harry Potter and the Philosopher’s
+                Stone (or ハリー・ポッターと賢者の石) by the end of the year.
+                Two weeks ago, I accomplished this goal.
+              </p>
               <footer>
-                <p>
-                  <time dateTime="2021-01-03">3rd January 2021</time>
-                </p>
+                <time dateTime="2021-01-10">10th January 2021</time>
               </footer>
             </ArticleText>
           </Article>
         </ArticleLink>
       </li>
     </ol>
+    <p>➕ More to come soon.</p>
   </Layout>
 )
 
