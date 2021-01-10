@@ -10,10 +10,10 @@ const Container = styled.div`
   position: relative;
   margin: 0 auto;
   max-width: 960px;
-  padding: 0 1em;
+  padding: 0 1rem;
 
   @media (min-width: ${BREAKPOINT.M}) {
-    padding: 0 2em;
+    padding: 0 2rem;
   }
 
   @media (min-width: ${BREAKPOINT.L}) {

@@ -19,11 +19,11 @@ const FAMILY = {
 }
 
 const SIZE = {
-  S: "0.8em",
-  M: "1em",
-  L: "1.25em",
-  XL: "1.5em",
-  XXL: "2em",
+  S: "0.8rem",
+  M: "1rem",
+  L: "1.25rem",
+  XL: "1.5rem",
+  XXL: "2rem",
 }
 
 const WEIGHT = {

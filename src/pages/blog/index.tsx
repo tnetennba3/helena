@@ -7,7 +7,7 @@ import Layout from "../../components/layout"
 import chart from "../../images/chart-by-chapter.png"
 
 const Article = styled.article`
-  box-shadow: 0 0 0.5em ${COLOR.ACCENT.LIGHT_GREY};
+  box-shadow: 0 0 0.5rem ${COLOR.ACCENT.LIGHT_GREY};
   background-color: ${COLOR.ACCENT.LIGHT_GREY};
   border-radius: 2px;
   padding: 2px;
@@ -27,7 +27,7 @@ const ArticleLink = styled(Link)`
 `
 
 const ArticleText = styled.div`
-  margin: 0.75em 0 0 1em;
+  margin: 0.75rem 1rem 0.5rem;
 `
 
 const Blog = () => (

@@ -44,8 +44,8 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  h1, h2 {
-    margin: 0.25em 0 0.75em !important;
+  h1, h2, h3 {
+    margin: 0.5rem 0 0.25rem !important;
   }
 
   h2 {

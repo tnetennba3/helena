@@ -8,12 +8,12 @@ const StyledNav = styled.nav`
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding-right: 0.5em;
+  padding-right: 0.5rem;
 `
 
 const StyledLink = styled(Link)`
-  margin: 0.5em 0.5em 0.5em 0;
-  padding: 0.5em 1em;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  padding: 0.5rem 1rem;
   font-size: ${FONT.SIZE.L};
 
   &:hover {
