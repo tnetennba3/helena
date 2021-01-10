@@ -8,9 +8,7 @@ import largeBackground from "./images/helena-l.png"
 
 const Background = styled.div`
   height: 100vh;
-  background-position: bottom;
-  background-size: cover;
-  background-image: url(${mediumBackground});
+  background: url(${mediumBackground}) bottom/cover ${COLOR.BACKGROUND.YELLOW};
 
   @media (min-width: ${BREAKPOINT.L}) {
     background-image: url(${largeBackground});

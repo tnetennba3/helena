@@ -4,6 +4,7 @@ export const COLOR = {
   BACKGROUND: {
     WHITE: "#FFFFFF",
     BLUE: "#7FBEE2",
+    YELLOW: "#F0CD6E",
   },
 
   ACCENT: {
