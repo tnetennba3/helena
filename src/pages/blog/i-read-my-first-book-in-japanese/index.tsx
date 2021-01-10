@@ -1,5 +1,7 @@
 import React from "react"
+import styled from "styled-components"
 
+import { COLOR } from "../../../styles/tokens"
 import Layout from "../../../components/layout"
 import Figure from "../../../components/figure-image"
 
@@ -14,9 +16,14 @@ import readingStatsByChapter from "./images/reading-stats-by-chapter.png"
 import severusSnape from "./images/severus-snape.jpg"
 import hogwartsOwls from "./images/hogwarts-owls.webp"
 
+const Small = styled.small`
+  color: ${COLOR.ACCENT.DARK_GREY};
+`
+
 const BlogPost = () => (
   <Layout>
     <h1>I read my first book in Japanese 🎉</h1>
+    <Small>Jan 10, 2021 ・ 9 min read</Small>
     <p>
       After deciding to take learning Japanese seriously, I set an objective to
       read Harry Potter and the Philosopher’s Stone (or
