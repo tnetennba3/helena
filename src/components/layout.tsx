@@ -22,7 +22,7 @@ const Container = styled.div`
 `
 
 interface Props {
-  children?: React.ReactNode
+  children: React.ReactNode
 }
 
 const Layout: React.FC<Props> = ({ children }) => (
