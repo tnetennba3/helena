@@ -53,7 +53,13 @@ const GlobalStyle = createGlobalStyle`
     font-weight: ${FONT.WEIGHT.MEDIUM};
   }
 
+  h3 {
+    font-size: ${FONT.SIZE.M};
+    font-weight: ${FONT.WEIGHT.BOLD};
+  }
+
   p {
+    margin: 0.75rem 0;
     line-height: 1.75;
   }
 
@@ -61,6 +67,19 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
     margin: 0;
     padding: 0;
+  }
+
+  em {
+    font-style: normal;
+    font-weight: ${FONT.WEIGHT.BOLD};
+  }
+
+  img {
+    width: 100%;
+  }
+
+  footer {
+    font-size: ${FONT.SIZE.S};
   }
 }
 `
