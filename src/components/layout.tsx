@@ -8,7 +8,7 @@ import Navigation from "../components/navigation"
 
 const Container = styled.div`
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   max-width: 960px;
   padding: 0 1rem;
 

@@ -7,7 +7,7 @@ import Layout from "../../components/layout"
 import coverImage from "./i-read-my-first-book-in-japanese/images/cover.png"
 
 const Article = styled.article`
-  margin-top: 1rem;
+  margin: 1rem 0;
   padding: 2px;
   box-shadow: 0 0 0.5rem ${COLOR.ACCENT.LIGHT_GREY};
   background-color: ${COLOR.ACCENT.LIGHT_GREY};
