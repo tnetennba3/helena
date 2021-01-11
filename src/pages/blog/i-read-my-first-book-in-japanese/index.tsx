@@ -25,16 +25,16 @@ const BlogPost = () => (
     <h1>I read my first book in Japanese 🎉</h1>
     <Small>Jan 10, 2021 ・ 9 min read</Small>
     <p>
-      After deciding to take learning Japanese seriously, I set an objective to
-      read Harry Potter and the Philosopher’s Stone (or
-      ハリー・ポッターと賢者の石) by the end of the year. A week ago, I
+      Last year, I decided to start seriously studying Japanese. I set myself an
+      objective to read Harry Potter and the Philosopher’s Stone (or
+      ハリー・ポッターと賢者の石) by the end of the year. Two weeks ago, I
       accomplished this goal. In this post, I describe my language learning
       journey, approach to reading, and will present some fun stats and graphs I
       recorded along the way.
     </p>
     <p>
-      Back in April 2020, I suddenly found myself with a lot more time on my
-      hands. The UK was under strict lockdown. Not having to commute to work,
+      Back in April, I suddenly found myself with a lot more time on my hands.
+      The UK was under strict lockdown. Not having to commute to work,
       socialise, or even go outside at all, meant I gained several hours a day.
       At first, I spent all that extra time playing Animal Crossing (
       <small>200 hours within the first month of its release</small>). On my
@@ -62,7 +62,7 @@ const BlogPost = () => (
     </p>
     <p>
       Nevertheless, I was committed to give learning Japanese a proper go. It
-      felt like I needed to, to reconnect with my heritage.
+      felt like I would be foresaking my heritage if I didn't.
     </p>
     <p>
       So, my self-directed language learning journey began with{" "}
@@ -172,11 +172,10 @@ const BlogPost = () => (
       getting much out of by reading it again in its impure, translated form.
     </p>
     <p>
-      Though it might be true that I wouldn’t be discovering a new narrative
-      reading Harry Potter, that wasn’t why I was reading it. I simply wanted to
-      get better at Japanese. And it’s much easier to get started with something
-      that you are already familiar with as you have a lot of context to full
-      back on.
+      Though I wouldn’t be discovering a new narrative reading Harry Potter, it
+      wasn’t why I was chose it. I simply wanted to get better at Japanese. And
+      it’s much easier to get started with something that you are already
+      familiar with as you have a lot of context to full back on.
     </p>
     <p>
       For example, I might come across the phrase 組み分け帽子. After looking up
@@ -217,7 +216,7 @@ const BlogPost = () => (
     <p>
       I decided I would track my progress during my time reading Harry Potter.
       Things I wanted to track included how many kanji and words I was looking
-      up as well as how long it was taking me to read each page. I know I would
+      up as well as how long it was taking me to read each page. I knew I would
       be slow, much much slower than if I was reading in English so I needed
       something to motivate me to keep going. Being able to track my improvement
       over time became that motivator. Knowing that, even if I’m going at a
@@ -296,8 +295,8 @@ const BlogPost = () => (
       And yet, progress wasn’t always linear. I clearly had some setbacks.
       Notably, in chapter eight, we spend a lot of time with the infamous
       Severus Snape. I found his style of speech harder to decipher than the
-      other characters. He was also pretty happy to use obscure kanji whenver he
-      could.
+      other characters. He was also pretty happy to use obscure kanji whenever
+      he could.
     </p>
     <Figure
       src={severusSnape}
@@ -309,7 +308,7 @@ const BlogPost = () => (
       page, even sentence to sentence, the difficulty of the text you’re reading
       is going to fluctuate. And yet, it’s easy to lose sight of that in the
       moment. You might read a difficult text and think you’re not making any
-      headway. But if you take a step back to view your journey across a wider
+      headway. But if you take a step back to view your journey over a wider
       time frame, it’s easy to see that you really are making progress. And
       that’s where tracking my stats helped me to gain that perspective. I could
       recognise that chapter eight was just a bump in the road in my quest to
