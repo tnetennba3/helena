@@ -8,16 +8,16 @@ import Navigation from "../components/navigation"
 
 const Container = styled.div`
   position: relative;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
   max-width: 960px;
-  padding: 0 1rem;
+  padding: 0 1rem 1.5rem;
 
   @media (min-width: ${BREAKPOINT.M}) {
-    padding: 0 2rem;
+    padding: 0 2rem 1.5rem;
   }
 
   @media (min-width: ${BREAKPOINT.L}) {
-    padding: 0;
+    padding: 0 0 1.5rem;
   }
 `
 
