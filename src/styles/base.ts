@@ -5,6 +5,7 @@ import { COLOR, FONT, BREAKPOINT } from "./tokens"
 const GlobalStyle = createGlobalStyle`
   html {
     width: 100%;
+    height: 100%;
     font-size: 16px;
 
     @media (min-width: ${BREAKPOINT.M}) {

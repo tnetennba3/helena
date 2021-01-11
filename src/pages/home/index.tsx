@@ -7,7 +7,9 @@ import mediumBackground from "./images/helena-m.png"
 import largeBackground from "./images/helena-l.png"
 
 const Background = styled.div`
-  height: 100vh;
+  position: fixed;
+  height: 100%;
+  width: 100%;
   background: url(${mediumBackground}) bottom/cover ${COLOR.BACKGROUND.YELLOW};
 
   @media (min-width: ${BREAKPOINT.L}) {
