@@ -15,10 +15,7 @@ const StyledLink = styled(Link)`
   margin: 0.5rem 0.5rem 0.5rem 0;
   padding: 0.5rem 1rem;
   font-size: ${FONT.SIZE.L};
-
-  &:hover {
-    font-weight: ${FONT.WEIGHT.BOLD};
-  }
+  text-decoration: none;
 `
 
 const Navigation = () => (

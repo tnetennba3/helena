@@ -38,7 +38,10 @@ const GlobalStyle = createGlobalStyle`
   a {
     position: relative;
     color: inherit;
-    text-decoration: none;
+
+    &:hover {
+      font-weight: ${FONT.WEIGHT.BOLD};
+    }
 
     &:focus, &:active {
       outline: 2px dashed ${COLOR.ACCENT.DARK_GREY};
@@ -71,8 +74,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   em {
-    font-style: normal;
-    font-weight: ${FONT.WEIGHT.BOLD};
+    font-weight: ${FONT.WEIGHT.MEDIUM};
   }
 
   img {

@@ -17,8 +17,6 @@ const Caption = styled.figcaption`
   font-style: italic;
 
   a {
-    text-decoration: underline;
-
     &:hover {
       font-weight: ${FONT.WEIGHT.BOLD};
     }

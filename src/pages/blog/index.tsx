@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 
-import { COLOR } from "../../styles/tokens"
+import { COLOR, FONT } from "../../styles/tokens"
 import Layout from "../../components/layout"
 import coverImage from "./i-read-my-first-book-in-japanese/images/cover.png"
 
@@ -16,10 +16,12 @@ const Article = styled.article`
 
 const ArticleLink = styled(Link)`
   display: block;
+  text-decoration: none;
 
   &:hover {
     transform: scale(1.05, 1.05);
     transition: all 0.25s ease-out;
+    font-weight: ${FONT.WEIGHT.NORMAL};
   }
 `
 
