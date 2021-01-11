@@ -7,7 +7,7 @@ import Figure from "../../../components/figure-image"
 
 import animalCrossing from "./images/animal-crossing.jpg"
 import averageLanguagesSpoken from "./images/average-languages-spoken.jpg"
-import immersedInBook from "./images/immersed-in-book.jpg"
+import kanji from "./images/kanji.png"
 import sortingHat from "./images/sorting-hat.jpg"
 import illustratedBook from "./images/illustrated-book.jpg"
 import spreadsheet from "./images/spreadsheet.png"
@@ -76,14 +76,18 @@ const BlogPost = () => (
     <Figure
       src={averageLanguagesSpoken}
       alt="A map of the European Union"
-      caption="Average number of languages spoken in the EU by country."
-      cite={
-        <a
-          href="https://jakubmarian.com/map-of-the-percentage-of-people-speaking-english-in-the-eu-by-country/"
-          target="_blank"
-        >
-          Jakub Marian
-        </a>
+      caption={
+        <>
+          Average number of languages spoken in the EU by country. Source:{" "}
+          <cite>
+            <a
+              href="https://jakubmarian.com/map-of-the-percentage-of-people-speaking-english-in-the-eu-by-country/"
+              target="_blank"
+            >
+              Jakub Marian
+            </a>
+          </cite>
+        </>
       }
     />
     <p>
@@ -104,11 +108,6 @@ const BlogPost = () => (
       up Japanese just by reading stuff in Japanese and listening to stuff in
       Japanese, that sounds like I could actually enjoy myself.
     </p>
-    <Figure
-      src={immersedInBook}
-      alt="Person with a book over in their face"
-      caption="Immerse yourself. But not like that."
-    />
     <p>
       At the start of April, I set my focus on improving my reading ability. I
       couldn’t read much Japanese at all and I knew that being able to do so
@@ -120,6 +119,23 @@ const BlogPost = () => (
       read and understand each of them. I was familiar with about 20 kanji at
       the time. The average Japanese adult can read <em>over 3000</em>.
     </p>
+    <Figure
+      src={kanji}
+      alt="Person with a book over in their face"
+      caption={
+        <>
+          Here's just a thousand of the{" "}
+          <cite>
+            <a
+              href="https://upload.wikimedia.org/wikipedia/commons/1/11/3002_Kanji.svg"
+              target="_blank"
+            >
+              3002 most common kanji
+            </a>
+          </cite>
+        </>
+      }
+    />
     <p>
       So, knowing that I wanted to get better at reading, I just needed a
       direction to work towards. This goal of reading Harry Potter became my

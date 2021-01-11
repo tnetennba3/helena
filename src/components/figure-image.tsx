@@ -28,24 +28,13 @@ const Caption = styled.figcaption`
 interface Props {
   src: string
   alt: string
-  caption?: string
-  cite?: React.ReactNode
+  caption?: string | React.ReactNode
 }
 
-const FigureImage: React.FC<Props> = ({ src, alt, caption, cite }) => (
+const FigureImage: React.FC<Props> = ({ src, alt, caption }) => (
   <Figure>
     <img src={src} alt={alt} />
-    {caption && (
-      <Caption>
-        {caption}
-        {cite && (
-          <>
-            {" "}
-            Source: <cite>{cite}</cite>
-          </>
-        )}
-      </Caption>
-    )}
+    {caption && <Caption>{caption}</Caption>}
   </Figure>
 )
 
