@@ -119,7 +119,7 @@ const BlogPost = () => (
     </p>
     <Figure
       src={kanji}
-      alt="Person with a book over in their face"
+      alt="12 blocks of 100 individual kanji"
       caption={
         <>
           Here's just 1200 of the{" "}

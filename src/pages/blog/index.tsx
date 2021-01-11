@@ -31,12 +31,15 @@ const ArticleText = styled.div`
 
 const Blog = () => (
   <Layout>
-    <h1>This is where I write about stuff.</h1>
+    <h1>This is where I write about stuff. ✍️</h1>
     <ol>
       <li>
         <ArticleLink to="/blog/i-read-my-first-book-in-japanese">
           <Article>
-            <img src={coverImage} alt="Unlabelled graph" />
+            <img
+              src={coverImage}
+              alt="Unlabelled combined bar and line graph trending downwards"
+            />
             <ArticleText>
               <h2>I read my first book in Japanese 🎉</h2>
               <p>
