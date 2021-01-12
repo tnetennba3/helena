@@ -3,8 +3,10 @@ import styled from "styled-components"
 
 import { COLOR } from "../../../styles/tokens"
 import Layout from "../../../components/layout"
+import SEO from "../../../components/seo"
 import Figure from "../../../components/figure-image"
 
+import cover from "./images/cover.png"
 import animalCrossing from "./images/animal-crossing.jpg"
 import averageLanguagesSpoken from "./images/average-languages-spoken.jpg"
 import kanji from "./images/kanji.png"
@@ -22,6 +24,11 @@ const Small = styled.small`
 
 const BlogPost = () => (
   <Layout>
+    <SEO
+      title="I read my first book in Japanese 🎉"
+      description="My 2020 goal was to read Harry Potter and the Philosopher’s Stone (or ハリー・ポッターと賢者の石) by the end of the year. Two weeks ago, I accomplished this goal."
+      image={cover}
+    />
     <h1>I read my first book in Japanese 🎉</h1>
     <Small>Jan 10, 2021 ・ 9 min read</Small>
     <p>

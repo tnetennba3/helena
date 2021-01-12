@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import { BREAKPOINT, COLOR } from "../styles/tokens"
+import SEO from "../components/seo"
 import Layout from "../components/layout"
 import mediumBackground from "../images/background-m.png"
 import largeBackground from "../images/background-l.png"
@@ -40,6 +41,7 @@ const Heading = styled.div`
 
 const Home = () => (
   <Background>
+    <SEO />
     <Svg viewBox="0 0 100 100" preserveAspectRatio="none">
       <polygon fill={COLOR.BACKGROUND.BLUE} points="0,100 100,70 100,0 0,0" />
     </Svg>

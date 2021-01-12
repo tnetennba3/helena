@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 import { COLOR, FONT } from "../../styles/tokens"
 import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 import coverImage from "./i-read-my-first-book-in-japanese/images/cover.png"
 
 const Article = styled.article`
@@ -31,6 +32,7 @@ const ArticleText = styled.div`
 
 const Blog = () => (
   <Layout>
+    <SEO title="Blog" />
     <h1>This is where I write about stuff. ✍️</h1>
     <ol>
       <li>
