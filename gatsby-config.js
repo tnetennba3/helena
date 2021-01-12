@@ -3,7 +3,7 @@ module.exports = {
     title: `Helena`,
     description: `Personal site of Helena Thompson`,
     author: `Helena Thompson`,
-    siteUrl: `https://helenathompson.dev`,
+    url: `https://helenathompson.dev`,
     image: `/images/share.png`,
   },
   plugins: [
