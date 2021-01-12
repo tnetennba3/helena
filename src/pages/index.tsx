@@ -3,8 +3,8 @@ import styled from "styled-components"
 
 import { BREAKPOINT, COLOR } from "../styles/tokens"
 import Layout from "../components/layout"
-import mediumBackground from "../images/helena-m.png"
-import largeBackground from "../images/helena-l.png"
+import mediumBackground from "../images/background-m.png"
+import largeBackground from "../images/background-l.png"
 
 const Background = styled.div`
   position: fixed;
