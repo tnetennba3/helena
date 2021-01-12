@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
+    title: `Helena`,
+    description: `Personal site of Helena Thompson`,
     author: `Helena Thompson`,
+    siteUrl: `https://helenathompson.dev`,
+    image: `/images/share.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
