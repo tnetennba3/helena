@@ -72,10 +72,6 @@ const SEO: React.FC<Props> = ({ title, description, image, lang = "en" }) => {
           content: `website`,
         },
         {
-          property: `og:url`,
-          content: siteMetadata.url,
-        },
-        {
           property: `og:image`,
           content: metaImage,
         },
