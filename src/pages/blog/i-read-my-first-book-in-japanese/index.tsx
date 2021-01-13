@@ -34,7 +34,9 @@ const BlogPost = () => (
         🎉
       </span>
     </h1>
-    <Small>Jan 10, 2021 ・ 9 min read</Small>
+    <Small>
+      Jan 10, 2021 <span aria-hidden="true">・</span> 9 min read
+    </Small>
     <p>
       Last year, I embarked on a journey to learn Japanese. I set myself an
       objective to read Harry Potter and the Philosopher’s Stone (or
