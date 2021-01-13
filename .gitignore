@@ -9,4 +9,4 @@ public
 .DS_Store
 
 # Dotenv environment variables files
-.env
+.env.*
