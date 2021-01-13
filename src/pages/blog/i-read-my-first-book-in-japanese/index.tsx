@@ -55,7 +55,7 @@ const BlogPost = () => (
     </p>
     <Figure
       src={animalCrossing}
-      alt="In-game screenshot of me playing Animal Crossing"
+      alt="In-game screenshot of me in Animal Crossing sitting on a bench next to a napping Eunice."
       caption="Taking a quick break after many hours of grueling construction work."
     />
     <p>
@@ -85,7 +85,7 @@ const BlogPost = () => (
     </p>
     <Figure
       src={averageLanguagesSpoken}
-      alt="A map of the European Union"
+      alt="A map of the European Union."
       caption={
         <>
           Average number of languages spoken in the EU by country. Source:{" "}
@@ -130,7 +130,7 @@ const BlogPost = () => (
     </p>
     <Figure
       src={kanji}
-      alt="12 blocks of 100 individual kanji"
+      alt="12 blocks of 100 individual kanji."
       caption={
         <>
           Here's just 1200 of the{" "}
@@ -199,7 +199,7 @@ const BlogPost = () => (
     </p>
     <Figure
       src={sortingHat}
-      alt="Harry Potter getting sorted"
+      alt="Harry Potter getting sorted into a house."
       caption="Anything but Slytherin, anything but Slytherin."
     />
     <p>
@@ -217,7 +217,7 @@ const BlogPost = () => (
     </p>
     <Figure
       src={illustratedBook}
-      alt="Illustration verison of Harry Potter and the Philosopher's Stone"
+      alt="My illustrated copy of Harry Potter and the Philosopher's Stone."
       caption="It's so pretty."
     />
     <h2>Tracking my progress</h2>
@@ -240,7 +240,7 @@ const BlogPost = () => (
     </p>
     <Figure
       src={spreadsheet}
-      alt="Screenshot of my spreadsheet"
+      alt="Screenshot of my spreadsheet."
       caption="My very ugly spreadsheet."
     />
     <p>
@@ -275,7 +275,7 @@ const BlogPost = () => (
     </p>
     <Figure
       src={readingStatsBySession}
-      alt="Graph showing my reading stats by session"
+      alt="Graph showing my reading stats by session."
     />
     <p>
       The first page took me an <em>hour and a half</em> to read. But I improved
@@ -285,7 +285,7 @@ const BlogPost = () => (
     </p>
     <Figure
       src={readingStatsByChapter}
-      alt="Graph showing my reading stats by chapter"
+      alt="Graph showing my reading stats by chapter."
     />
     <p>
       The rate of lookups tells a similar story. The first chapter had me
@@ -306,13 +306,12 @@ const BlogPost = () => (
     <p>
       And yet, progress wasn’t always linear. I clearly had some setbacks.
       Notably, in chapter eight, we spend a lot of time with the infamous
-      Severus Snape. His style of speech harder was a lot harder to decipher
-      than the other characters, not least because of his liberal use of obscure
-      kanji.
+      Severus Snape. His style of speech was a lot harder to decipher than the
+      other characters, not least because of his liberal use of obscure kanji.
     </p>
     <Figure
       src={severusSnape}
-      alt="Severus Snape forcing Ron and Harry to study"
+      alt="Severus Snape forcing Ron and Harry to study."
       caption="Professor, I'm trying my best!"
     />
     <p>
@@ -337,7 +336,7 @@ const BlogPost = () => (
     </p>
     <Figure
       src={hogwartsOwls}
-      alt="Watercolour of Hogwarts and two owls flying ahead"
+      alt="Watercolour of Hogwarts and two owls soaring above."
     />
     <p>
       This year, my goal is to read <em>two Japanese books a month</em>! I will
