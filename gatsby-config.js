@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: '.env',
+})
+
 module.exports = {
   siteMetadata: {
     title: `Helena`,
@@ -29,5 +33,12 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
+    {
+  resolve: `gatsby-plugin-google-gtag`,
+  options: {
+    trackingId: process.env.GA_TRACKING_ID,
+    ,
+  },
+},
   ],
 }
