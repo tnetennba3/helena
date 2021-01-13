@@ -12,6 +12,7 @@ const StyledNav = styled.nav`
 `
 
 const StyledLink = styled(Link)`
+  position: relative;
   margin: 0.5rem 0.5rem 0.5rem 0;
   padding: 0.5rem 1rem;
   font-size: ${FONT.SIZE.L};

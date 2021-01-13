@@ -36,7 +36,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
-    position: relative;
     color: inherit;
 
     &:hover {

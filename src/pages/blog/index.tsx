@@ -8,11 +8,17 @@ import SEO from "../../components/seo"
 import coverImage from "./i-read-my-first-book-in-japanese/images/cover.png"
 
 const Article = styled.article`
+  position: relative;
   margin: 1rem 0;
   padding: 2px;
   box-shadow: 0 0 0.5rem ${COLOR.ACCENT.LIGHT_GREY};
   background-color: ${COLOR.ACCENT.LIGHT_GREY};
   border-radius: 2px;
+
+  &:hover {
+    transform: scale(1.05, 1.05);
+    transition: all 0.25s ease-out;
+  }
 `
 
 const ArticleLink = styled(Link)`
@@ -20,9 +26,16 @@ const ArticleLink = styled(Link)`
   text-decoration: none;
 
   &:hover {
-    transform: scale(1.05, 1.05);
-    transition: all 0.25s ease-out;
-    font-weight: ${FONT.WEIGHT.NORMAL};
+    font-weight: ${FONT.WEIGHT.MEDIUM};
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
   }
 `
 
@@ -36,25 +49,27 @@ const Blog = () => (
     <h1>This is where I write about stuff. ✍️</h1>
     <ol>
       <li>
-        <ArticleLink to="/blog/i-read-my-first-book-in-japanese">
-          <Article>
-            <img
-              src={coverImage}
-              alt="Unlabelled combined bar and line graph trending downwards"
-            />
-            <ArticleText>
-              <h2>I read my first book in Japanese 🎉</h2>
-              <p>
-                My 2020 goal was to read Harry Potter and the Philosopher’s
-                Stone (or ハリー・ポッターと賢者の石) by the end of the year.
-                Two weeks ago, I accomplished this goal.
-              </p>
-              <footer>
-                <time dateTime="2021-01-10">10th January 2021</time>
-              </footer>
-            </ArticleText>
-          </Article>
-        </ArticleLink>
+        <Article>
+          <img
+            src={coverImage}
+            alt="Graph showing reading speed and rate of lookups per chapter trending downwards."
+          />
+          <ArticleText>
+            <h2>
+              <ArticleLink to="/blog/i-read-my-first-book-in-japanese">
+                I read my first book in Japanese 🎉
+              </ArticleLink>
+            </h2>
+            <p>
+              My 2020 goal was to read Harry Potter and the Philosopher’s Stone
+              (or ハリー・ポッターと賢者の石) by the end of the year. Two weeks
+              ago, I accomplished this goal.
+            </p>
+            <footer>
+              <time dateTime="2021-01-10">10th January 2021</time>
+            </footer>
+          </ArticleText>
+        </Article>
       </li>
     </ol>
     <p>➕ More to come soon.</p>
