@@ -34,11 +34,12 @@ module.exports = {
       },
     },
     {
-  resolve: `gatsby-plugin-google-gtag`,
-  options: {
-    trackingId: process.env.GA_TRACKING_ID,
-    ,
-  },
-},
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: process.env.GA_TRACKING_ID,
+        head: false,
+        anonymize: true,
+      },
+    },
   ],
 }
