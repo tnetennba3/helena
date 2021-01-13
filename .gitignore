@@ -1,9 +1,12 @@
 # Dependency directories
 node_modules/
 
-# gatsby files
+# Gatsby files
 .cache/
 public
 
 # Mac files
 .DS_Store
+
+# Dotenv environment variables files
+.env
