@@ -175,7 +175,10 @@ const BlogPost = () => (
       </cite>{" "}
       techniques. In future, I might write another post going over the resources
       and methods I used in more detail. But for now, I’ll focus on how I
-      tackled reading my first book in Japanese. 📖
+      tackled reading my first book in Japanese.{" "}
+      <span role="img" aria-label="Book">
+        📖
+      </span>
     </p>
     <h2>Why Harry Potter?</h2>
     <p>
