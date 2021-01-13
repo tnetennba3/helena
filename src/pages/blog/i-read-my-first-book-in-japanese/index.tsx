@@ -28,7 +28,12 @@ const BlogPost = () => (
       description="My 2020 goal was to read Harry Potter and the Philosopher’s Stone (or ハリー・ポッターと賢者の石) by the end of the year. Two weeks ago, I accomplished this goal."
       image={illustratedBook}
     />
-    <h1>I read my first book in Japanese 🎉</h1>
+    <h1>
+      I read my first book in Japanese{" "}
+      <span role="img" aria-label="Party Popper">
+        🎉
+      </span>
+    </h1>
     <Small>Jan 10, 2021 ・ 9 min read</Small>
     <p>
       Last year, I embarked on a journey to learn Japanese. I set myself an
@@ -243,7 +248,10 @@ const BlogPost = () => (
       automates a lot of this for me.{" "}
       <small>
         But this might just sit atop my list of projects that I never actually
-        start. 🙈
+        start.{" "}
+        <span role="img" aria-label="See-No-Evil Monkey">
+          🙈
+        </span>
       </small>
     </p>
     <h2>Results</h2>

@@ -48,7 +48,10 @@ const Home = () => (
     <Layout>
       <Heading>
         <h1>
-          Hello! My name is Helena. 👋
+          Hello! My name is Helena.{" "}
+          <span role="img" aria-label="Waving Hand">
+            👋
+          </span>
           <br />
           I’m a Software Engineer.
         </h1>

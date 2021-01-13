@@ -46,7 +46,12 @@ const ArticleText = styled.div`
 const Blog = () => (
   <Layout>
     <SEO title="Blog" />
-    <h1>This is where I write about stuff. ✍️</h1>
+    <h1>
+      This is where I write about stuff.{" "}
+      <span role="img" aria-label="Writing Hand">
+        ✍️
+      </span>
+    </h1>
     <ol>
       <li>
         <Article>
@@ -57,7 +62,10 @@ const Blog = () => (
           <ArticleText>
             <h2>
               <ArticleLink to="/blog/i-read-my-first-book-in-japanese">
-                I read my first book in Japanese 🎉
+                I read my first book in Japanese{" "}
+                <span role="img" aria-label="Party Popper">
+                  🎉
+                </span>
               </ArticleLink>
             </h2>
             <p>
