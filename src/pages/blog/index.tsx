@@ -70,8 +70,8 @@ const Blog = () => (
             </h2>
             <p>
               My 2020 goal was to read Harry Potter and the Philosopher’s Stone
-              (or ハリー・ポッターと賢者の石) by the end of the year. Two weeks
-              ago, I accomplished this goal.
+              (or <span lang="ja">ハリー・ポッターと賢者の石</span>) by the end
+              of the year. Two weeks ago, I accomplished this goal.
             </p>
             <footer>
               <time dateTime="2021-01-10">10th January 2021</time>

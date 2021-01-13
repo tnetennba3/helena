@@ -38,10 +38,12 @@ const BlogPost = () => (
     <p>
       Last year, I embarked on a journey to learn Japanese. I set myself an
       objective to read Harry Potter and the Philosopher’s Stone (or
-      ハリー・ポッターと賢者の石) by the end of 2020. Two weeks ago, I
-      accomplished this goal. In this post, I describe my journey so far,
-      approach to reading, and will present some fun stats and graphs I recorded
-      along the way.
+      <span lang="ja">
+        ハリー<span aria-hidden="true">・</span>ポッターと賢者の石
+      </span>
+      ) by the end of 2020. Two weeks ago, I accomplished this goal. In this
+      post, I describe my journey so far, approach to reading, and will present
+      some fun stats and graphs I recorded along the way.
     </p>
     <p>
       Back in April, I suddenly found myself with a lot more time on my hands.
@@ -107,11 +109,12 @@ const BlogPost = () => (
       what you’ve learned in the real world. This can transform the vague,
       tenuous connections you have between foreign sounds and meaning in your
       native language into something concrete and meaningful in its own right.
-      It’s that extra step between knowing that the bunch of lines 青 can mean
-      “green” <em>or</em> “blue” and having the correct colour wash over you,
-      without thought, when seeing that character in context. For that, you need
-      to immerse yourself in the language and be exposed to the vast variety of
-      ways each kanji, word, grammar point, etc. can be used.
+      It’s that extra step between knowing that the bunch of lines{" "}
+      <span lang="ja">青</span> can mean “green” <em>or</em> “blue” and having
+      the correct colour wash over you, without thought, when seeing that
+      character in context. For that, you need to immerse yourself in the
+      language and be exposed to the vast variety of ways each kanji, word,
+      grammar point, etc. can be used.
     </p>
     <p>
       This approach to language learning seemed very appealing. If I could pick
@@ -187,15 +190,16 @@ const BlogPost = () => (
     </p>
     <p>
       For starters, you have a lot of context to full back on. I might come
-      across the phrase 組み分け帽子 and upon checking the dictionary, would
-      discover that the first part (組み分け) means “division into groups” and
-      the second (帽子) means “hat”. Without any knowledge of Harry Potter, this
-      is quite a cryptic phrase and could leave you scratching your head for a
-      while. For those of us that know the story, it’s easy to recognise “Oh,
-      it’s the Sorting Hat!” This meant I had no trouble with made-up names and
-      phrases (which there are a lot of in Harry Potter). These nuggets of
-      knowledge also acted as anchors in the story that would help me verify if
-      I was understanding the text correctly.
+      across the phrase <span lang="ja">組み分け帽子</span> and upon checking
+      the dictionary, would discover that the first part (
+      <span lang="ja">組み分け</span>) means “division into groups” and the
+      second (<span lang="ja">帽子</span>) means “hat”. Without any knowledge of
+      Harry Potter, this is quite a cryptic phrase and could leave you
+      scratching your head for a while. For those of us that know the story,
+      it’s easy to recognise “Oh, it’s the Sorting Hat!” This meant I had no
+      trouble with made-up names and phrases (which there are a lot of in Harry
+      Potter). These nuggets of knowledge also acted as anchors in the story
+      that would help me verify if I was understanding the text correctly.
     </p>
     <Figure
       src={sortingHat}
