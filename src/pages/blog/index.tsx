@@ -61,7 +61,7 @@ const Blog = () => (
           />
           <ArticleText>
             <h2>
-              <ArticleLink to="/blog/i-read-my-first-book-in-japanese">
+              <ArticleLink to="/blog/i-read-my-first-book-in-japanese/">
                 I read my first book in Japanese{" "}
                 <span role="img" aria-label="Party Popper">
                   🎉

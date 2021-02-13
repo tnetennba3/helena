@@ -22,7 +22,7 @@ const StyledLink = styled(Link)`
 const Navigation = () => (
   <StyledNav>
     <StyledLink to="/">Home</StyledLink>
-    <StyledLink to="/blog">Blog</StyledLink>
+    <StyledLink to="/blog/">Blog</StyledLink>
   </StyledNav>
 )
 
