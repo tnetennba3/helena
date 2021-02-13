@@ -15,7 +15,7 @@ interface QueryResult {
       title: string
       description: string
       author: string
-      url: string
+      siteUrl: string
       image: string
     }
   }
@@ -30,7 +30,7 @@ const SEO: React.FC<Props> = ({ title, description, image, lang = "en" }) => {
             title
             description
             author
-            url
+            siteUrl
             image
           }
         }
@@ -41,7 +41,7 @@ const SEO: React.FC<Props> = ({ title, description, image, lang = "en" }) => {
   const defaultTitle = siteMetadata.title
   const metaTtile = title || defaultTitle
   const metaDescription = description || siteMetadata.description
-  const metaImage = `${siteMetadata.url}${image || siteMetadata.image}`
+  const metaImage = `${siteMetadata.siteUrl}${image || siteMetadata.image}`
 
   return (
     <Helmet

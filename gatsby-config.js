@@ -7,21 +7,15 @@ module.exports = {
     title: `Helena`,
     description: `Personal site of Helena Thompson`,
     author: `Helena Thompson`,
-    url: `https://helenathompson.dev`,
+    siteUrl: `https://helenathompson.dev`,
     image: `/images/share.png`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -39,6 +33,13 @@ module.exports = {
         trackingId: process.env.GA_TRACKING_ID,
         head: false,
         anonymize: true,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
   ],
