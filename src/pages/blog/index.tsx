@@ -82,6 +82,7 @@ const Blog: React.FC<Props> = ({ data }) => (
         <Article>
           <Img
             fluid={data.file.childImageSharp.fluid}
+            backgroundColor={COLOR.BACKGROUND.WHITE}
             alt="Graph showing reading speed and rate of lookups per chapter trending downwards."
           />
           <ArticleText>
