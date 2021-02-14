@@ -1,11 +1,12 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
+import { graphql } from "gatsby"
+import Img, { FluidObject } from "gatsby-image"
 
 import { COLOR, FONT } from "../../styles/tokens"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import coverImage from "./i-read-my-first-book-in-japanese/images/cover.png"
 
 const Article = styled.article`
   position: relative;
@@ -43,7 +44,31 @@ const ArticleText = styled.div`
   margin: 0.75rem 1rem 0.5rem;
 `
 
-const Blog = () => (
+export const query = graphql`
+  query {
+    file(
+      relativePath: { eq: "blog/i-read-my-first-book-in-japanese/cover.png" }
+    ) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+  }
+`
+
+interface Props {
+  data: {
+    file: {
+      childImageSharp: {
+        fluid: FluidObject
+      }
+    }
+  }
+}
+
+const Blog: React.FC<Props> = ({ data }) => (
   <Layout>
     <SEO title="Blog" />
     <h1>
@@ -55,8 +80,8 @@ const Blog = () => (
     <ol>
       <li>
         <Article>
-          <img
-            src={coverImage}
+          <Img
+            fluid={data.file.childImageSharp.fluid}
             alt="Graph showing reading speed and rate of lookups per chapter trending downwards."
           />
           <ArticleText>
