@@ -19,7 +19,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `
 
-const Navigation = () => (
+const Navigation: React.FC = () => (
   <StyledNav>
     <StyledLink to="/">Home</StyledLink>
     <StyledLink to="/blog/">Blog</StyledLink>
