@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Img, { FluidObject } from "gatsby-image"
 
 import { BREAKPOINT, FONT } from "../styles/tokens"
 
@@ -24,14 +25,14 @@ const Caption = styled.figcaption`
 `
 
 interface Props {
-  src: string
+  fluid: FluidObject
   alt: string
   caption?: string | React.ReactNode
 }
 
-const FigureImage: React.FC<Props> = ({ src, alt, caption }) => (
+const FigureImage: React.FC<Props> = ({ fluid, alt, caption }) => (
   <Figure>
-    <img src={src} alt={alt} />
+    <Img fluid={fluid} alt={alt} />
     {caption && <Caption>{caption}</Caption>}
   </Figure>
 )
