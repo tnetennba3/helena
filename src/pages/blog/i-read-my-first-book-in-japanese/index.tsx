@@ -116,7 +116,7 @@ const BlogPost: React.FC<Props> = ({ data }) => {
       </p>
       <p>
         Nevertheless, I was committed to give learning Japanese a proper go. It
-        felt like I would be foresaking my heritage if I didn't.
+        felt like I would be foresaking my heritage if I didn’t.
       </p>
       <p>
         So, my self-directed language learning journey began with{" "}
@@ -180,7 +180,7 @@ const BlogPost: React.FC<Props> = ({ data }) => {
         alt="12 blocks of 100 individual kanji."
         caption={
           <>
-            Here's just 1200 of the{" "}
+            Here’s just 1200 of the{" "}
             <cite>
               <a
                 href="https://upload.wikimedia.org/wikipedia/commons/1/11/3002_Kanji.svg"
@@ -238,7 +238,7 @@ const BlogPost: React.FC<Props> = ({ data }) => {
         translated form.
       </p>
       <p>
-        Discovering a new narrative wasn't the reason I chose Harry Potter. I
+        Discovering a new narrative wasn’t the reason I chose Harry Potter. I
         simply wanted to get better at Japanese. And it’s much easier to get
         started with something that you are already familiar with.
       </p>
@@ -265,7 +265,7 @@ const BlogPost: React.FC<Props> = ({ data }) => {
         Likewise, I don’t have a great tolerance for ambiguity. I like to make
         sure I’m understanding every sentence, every detail when I’m taking
         something in. This sense of unease, that I’m missing something, is hard
-        to overcome if you’re reading in a language you're not confident in.
+        to overcome if you’re reading in a language you’re not confident in.
         Better to start with a tale you already know.
       </p>
       <p>
@@ -276,8 +276,8 @@ const BlogPost: React.FC<Props> = ({ data }) => {
       </p>
       <Figure
         fluid={findFluid("illustrated-book.jpg")}
-        alt="My illustrated copy of Harry Potter and the Philosopher's Stone."
-        caption="It's so pretty."
+        alt="My illustrated copy of Harry Potter and the Philosopher’s Stone."
+        caption="It’s so pretty."
       />
       <h2>Tracking my progress</h2>
       <p>
@@ -327,7 +327,7 @@ const BlogPost: React.FC<Props> = ({ data }) => {
       </ul>
       <p>
         As you can see, it took me a <em>long time</em> to read Harry Potter and
-        the Philosopher's Stone. To put it into perspective, I could have read
+        the Philosopher’s Stone. To put it into perspective, I could have read
         over ten English novels in that time. But I expected that going into
         this journey. What I was more concerned about was whether I became a
         better reader over those 62 hours. And the answer was a definitive{" "}
@@ -357,7 +357,7 @@ const BlogPost: React.FC<Props> = ({ data }) => {
         grammar.
       </p>
       <p>
-        One thing I hadn't predicted was my stamina growth. I started off only
+        One thing I hadn’t predicted was my stamina growth. I started off only
         being able to read half a page at a time. Despite being very motivated
         (it was what the previous six months were leading up to after all), I
         found it draining enough that I needed to take a break after 30-40
@@ -373,7 +373,7 @@ const BlogPost: React.FC<Props> = ({ data }) => {
       <Figure
         fluid={findFluid("severus-snape.jpg")}
         alt="Severus Snape forcing Ron and Harry to study."
-        caption="Professor, I'm trying my best!"
+        caption="Professor, I’m trying my best!"
       />
       <p>
         This was an important lesson I learned. From chapter to chapter, page to
