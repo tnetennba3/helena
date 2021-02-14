@@ -137,6 +137,7 @@ const BlogPost: React.FC<Props> = ({ data }) => {
               <a
                 href="https://jakubmarian.com/map-of-the-percentage-of-people-speaking-english-in-the-eu-by-country/"
                 target="_blank"
+                rel="noreferrer"
               >
                 Jakub Marian
               </a>
@@ -184,6 +185,7 @@ const BlogPost: React.FC<Props> = ({ data }) => {
               <a
                 href="https://upload.wikimedia.org/wikipedia/commons/1/11/3002_Kanji.svg"
                 target="_blank"
+                rel="noreferrer"
               >
                 3002 most common kanji
               </a>
@@ -201,7 +203,11 @@ const BlogPost: React.FC<Props> = ({ data }) => {
         the book. Before I could even get started on the first page, I spent
         half a year buried in textbooks, reading short form text such as{" "}
         <cite>
-          <a href="https://www3.nhk.or.jp/news/easy/" target="_blank">
+          <a
+            href="https://www3.nhk.or.jp/news/easy/"
+            target="_blank"
+            rel="noreferrer"
+          >
             NHK Easy News
           </a>
         </cite>{" "}
@@ -210,6 +216,7 @@ const BlogPost: React.FC<Props> = ({ data }) => {
           <a
             href="https://en.wikipedia.org/wiki/Spaced_repetition"
             target="_blank"
+            rel="noreferrer"
           >
             spaced repetition
           </a>
