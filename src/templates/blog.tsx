@@ -20,7 +20,7 @@ export const pageQuery = graphql`
         title
         description
         date(formatString: "MMM DD, YYYY")
-        ogimage {
+        cover {
           childImageSharp {
             fixed {
               src
@@ -41,7 +41,7 @@ interface Props {
         title: string
         description: string
         date: string
-        ogimage: {
+        cover: {
           childImageSharp: {
             fixed: {
               src: string
@@ -55,14 +55,14 @@ interface Props {
 
 const Template: React.FC<Props> = ({ data }) => {
   const { frontmatter, body, timeToRead } = data.mdx
-  const { title, description, ogimage, date } = frontmatter
+  const { title, description, cover, date } = frontmatter
 
   return (
     <Layout>
       <SEO
         title={title}
         description={description}
-        image={ogimage.childImageSharp.fixed.src}
+        image={cover.childImageSharp.fixed.src}
       />
       <h1>{title}</h1>
       <Small>
