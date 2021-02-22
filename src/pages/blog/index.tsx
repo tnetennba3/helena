@@ -46,24 +46,81 @@ const ArticleText = styled.div`
 
 export const query = graphql`
   query {
-    file(
-      relativePath: { eq: "blog/i-read-my-first-book-in-japanese/cover.png" }
-    ) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+    allMdx(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1000) {
+      edges {
+        node {
+          frontmatter {
+            slug
+            title
+            description
+            date
+            dateFormatted: date(formatString: "Do MMMM YYYY")
+            alt
+            cover {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
+          }
         }
       }
     }
   }
 `
 
+interface Node {
+  node: {
+    frontmatter: {
+      slug: string
+      title: string
+      description: string
+      date: string
+      dateFormatted: string
+      alt: string
+      cover: {
+        childImageSharp: {
+          fluid: FluidObject
+        }
+      }
+    }
+  }
+}
+
+const Card: React.FC<Node> = ({ node }) => {
+  const {
+    slug,
+    title,
+    description,
+    date,
+    dateFormatted,
+    alt,
+    cover,
+  } = node.frontmatter
+
+  return (
+    <li>
+      <Article>
+        <Img fluid={cover.childImageSharp.fluid} alt={alt} />
+        <ArticleText>
+          <h2>
+            <ArticleLink to={slug}>{title}</ArticleLink>
+          </h2>
+          <p>{description}</p>
+          <footer>
+            <time dateTime={date}>{dateFormatted}</time>
+          </footer>
+        </ArticleText>
+      </Article>
+    </li>
+  )
+}
+
 interface Props {
   data: {
-    file: {
-      childImageSharp: {
-        fluid: FluidObject
-      }
+    allMdx: {
+      edges: Node[]
     }
   }
 }
@@ -77,35 +134,7 @@ const Blog: React.FC<Props> = ({ data }) => (
         ✍️
       </span>
     </h1>
-    <ol>
-      <li>
-        <Article>
-          <Img
-            fluid={data.file.childImageSharp.fluid}
-            backgroundColor={COLOR.BACKGROUND.WHITE}
-            alt="Graph showing reading speed and rate of lookups per chapter trending downwards."
-          />
-          <ArticleText>
-            <h2>
-              <ArticleLink to="/blog/i-read-my-first-book-in-japanese/">
-                I read my first book in Japanese{" "}
-                <span role="img" aria-label="Party Popper">
-                  🎉
-                </span>
-              </ArticleLink>
-            </h2>
-            <p>
-              My 2020 goal was to read Harry Potter and the Philosopher’s Stone
-              (or <span lang="ja">ハリー・ポッターと賢者の石</span>) by the end
-              of the year. Two weeks ago, I accomplished this goal.
-            </p>
-            <footer>
-              <time dateTime="2021-01-10">10th January 2021</time>
-            </footer>
-          </ArticleText>
-        </Article>
-      </li>
-    </ol>
+    <ol>{data.allMdx.edges.map(Card)}</ol>
     <p>➕ More to come soon.</p>
   </Layout>
 )

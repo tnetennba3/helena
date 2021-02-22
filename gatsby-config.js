@@ -15,6 +15,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-remark-images`,
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -25,6 +26,21 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 880,
+              quality: 50,
+              showCaptions: ['title'],
+            },
+          },
+        ],
       },
     },
     {
@@ -40,6 +56,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/blog`,
       },
     },
   ],
