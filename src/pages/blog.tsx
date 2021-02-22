@@ -4,9 +4,9 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img, { FluidObject } from "gatsby-image"
 
-import { COLOR, FONT } from "../../styles/tokens"
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
+import { COLOR, FONT } from "../styles/tokens"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const Article = styled.article`
   position: relative;
