@@ -83,6 +83,26 @@ const GlobalStyle = createGlobalStyle`
   footer {
     font-size: ${FONT.SIZE.S};
   }
+
+  figure {
+    text-align: center;
+
+    @media (max-width: ${BREAKPOINT.M}) {
+      margin: 0;
+    }
+  }
+
+  figcaption {
+    margin-top: 0.5rem;
+    font-size: ${FONT.SIZE.S};
+    font-style: italic;
+
+    a {
+      &:hover {
+        font-weight: ${FONT.WEIGHT.BOLD};
+      }
+    }
+  }
 }
 `
 
