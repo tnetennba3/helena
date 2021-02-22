@@ -19,7 +19,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
-        date(formatString: "MMM DD, YYYY")
+        date
+        dateFormatted: date(formatString: "MMM DD, YYYY")
         cover {
           childImageSharp {
             fixed {
@@ -41,6 +42,7 @@ interface Props {
         title: string
         description: string
         date: string
+        dateFormatted: string
         cover: {
           childImageSharp: {
             fixed: {
@@ -55,7 +57,7 @@ interface Props {
 
 const Template: React.FC<Props> = ({ data }) => {
   const { frontmatter, body, timeToRead } = data.mdx
-  const { title, description, cover, date } = frontmatter
+  const { title, description, cover, date, dateFormatted } = frontmatter
 
   return (
     <Layout>
@@ -66,7 +68,8 @@ const Template: React.FC<Props> = ({ data }) => {
       />
       <h1>{title}</h1>
       <Small>
-        {date} <span aria-hidden="true">・</span> {timeToRead} min read
+        <time dateTime={date}>{dateFormatted}</time>{" "}
+        <span aria-hidden="true">・</span> {timeToRead} min read
       </Small>
       <MDXRenderer>{body}</MDXRenderer>
     </Layout>
