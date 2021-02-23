@@ -8,7 +8,7 @@ module.exports = {
     description: `Personal site of Helena Thompson`,
     author: `Helena Thompson`,
     siteUrl: `https://helenathompson.dev`,
-    image: `/images/share.png`,
+    image: `src/images/share.png`,
   },
   plugins: [
     `gatsby-plugin-sharp`,
@@ -78,7 +78,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/icons/website.png`,
       },
     },
     {
