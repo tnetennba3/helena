@@ -100,7 +100,7 @@ const Card: React.FC<Node> = ({ node }) => {
   } = node.frontmatter
 
   return (
-    <li>
+    <li key={title}>
       <Article>
         <Img fluid={image.childImageSharp.fluid} alt={imageAlt} />
         <ArticleText>
