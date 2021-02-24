@@ -3,10 +3,18 @@ import styled from "styled-components"
 import Helmet from "react-helmet"
 
 import BaseStylesheet from "../styles/base"
-import { BREAKPOINT } from "../styles/tokens"
+import { BREAKPOINT, COLOR } from "../styles/tokens"
 import Navigation from "../components/navigation"
 
-const Container = styled.div`
+interface BackgroundProps {
+  readonly backgroundColor?: string
+}
+
+const Background = styled.div<BackgroundProps>`
+  background-color: ${props => props.backgroundColor || COLOR.BACKGROUND.WHITE};
+`
+
+const Content = styled.div`
   position: relative;
   margin: 0 auto;
   max-width: 960px;
@@ -22,18 +30,19 @@ const Container = styled.div`
 `
 
 interface Props {
+  backgroundColor?: string
   children: React.ReactNode
 }
 
-const Layout: React.FC<Props> = ({ children }) => (
-  <>
+const Layout: React.FC<Props> = ({ backgroundColor, children }) => (
+  <Background backgroundColor={backgroundColor}>
     <Helmet>
       <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
     </Helmet>
     <BaseStylesheet />
     <Navigation />
-    <Container>{children}</Container>
-  </>
+    <Content>{children}</Content>
+  </Background>
 )
 
 export default Layout

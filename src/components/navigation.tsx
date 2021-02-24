@@ -5,6 +5,10 @@ import styled from "styled-components"
 import { FONT } from "../styles/tokens"
 
 const StyledNav = styled.nav`
+  z-index: 100;
+  top: 0px;
+  position: -webkit-sticky;
+  position: sticky;
   width: 100%;
   display: flex;
   justify-content: flex-end;

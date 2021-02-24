@@ -86,7 +86,7 @@ const Home: React.FC<Props> = ({ data }) => {
       <Svg viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon fill={COLOR.BACKGROUND.BLUE} points="0,100 100,70 100,0 0,0" />
       </Svg>
-      <Layout>
+      <Layout backgroundColor={COLOR.BACKGROUND.BLUE}>
         <Heading>
           <h1>
             Hello! My name is Helena.{" "}
