@@ -21,7 +21,8 @@ export const pageQuery = graphql`
         description
         date
         dateFormatted: date(formatString: "MMM DD, YYYY")
-        cover {
+        imageAlt
+        image {
           childImageSharp {
             fixed {
               src
@@ -43,7 +44,8 @@ interface Props {
         description: string
         date: string
         dateFormatted: string
-        cover: {
+        imageAlt: string
+        image: {
           childImageSharp: {
             fixed: {
               src: string
@@ -57,14 +59,23 @@ interface Props {
 
 const Template: React.FC<Props> = ({ data }) => {
   const { frontmatter, body, timeToRead } = data.mdx
-  const { title, description, cover, date, dateFormatted } = frontmatter
+  const {
+    title,
+    description,
+    date,
+    dateFormatted,
+    imageAlt,
+    image,
+  } = frontmatter
 
   return (
     <Layout>
       <SEO
+        type="article"
         title={title}
         description={description}
-        image={cover.childImageSharp.fixed.src}
+        image={image.childImageSharp.fixed.src}
+        imageAlt={imageAlt}
       />
       <h1>{title}</h1>
       <Small>

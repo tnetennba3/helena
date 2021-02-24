@@ -73,7 +73,7 @@ const Home: React.FC<Props> = ({ data }) => {
 
   return (
     <>
-      <SEO />
+      <SEO title="Helena Thompson" />
       <Img
         fluid={sources}
         backgroundColor={COLOR.BACKGROUND.YELLOW}

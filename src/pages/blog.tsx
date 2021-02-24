@@ -55,8 +55,8 @@ export const query = graphql`
             description
             date
             dateFormatted: date(formatString: "Do MMMM YYYY")
-            alt
-            cover {
+            imageAlt
+            image {
               childImageSharp {
                 fluid {
                   ...GatsbyImageSharpFluid_withWebp
@@ -78,8 +78,8 @@ interface Node {
       description: string
       date: string
       dateFormatted: string
-      alt: string
-      cover: {
+      imageAlt: string
+      image: {
         childImageSharp: {
           fluid: FluidObject
         }
@@ -95,14 +95,14 @@ const Card: React.FC<Node> = ({ node }) => {
     description,
     date,
     dateFormatted,
-    alt,
-    cover,
+    imageAlt,
+    image,
   } = node.frontmatter
 
   return (
     <li>
       <Article>
-        <Img fluid={cover.childImageSharp.fluid} alt={alt} />
+        <Img fluid={image.childImageSharp.fluid} alt={imageAlt} />
         <ArticleText>
           <h2>
             <ArticleLink to={slug}>{title}</ArticleLink>
@@ -127,7 +127,7 @@ interface Props {
 
 const Blog: React.FC<Props> = ({ data }) => (
   <Layout>
-    <SEO title="Blog" />
+    <SEO title="Helena’s Blog" />
     <h1>
       This is where I write about stuff.{" "}
       <span role="img" aria-label="Writing Hand">

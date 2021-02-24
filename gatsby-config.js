@@ -4,11 +4,11 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Helena`,
-    description: `Personal site of Helena Thompson`,
-    author: `Helena Thompson`,
+    title: `Helena Thompson`,
+    description: `I'm a Software Engineer and I spend an unhealthy amount of my spare time studying Japanese.`,
     siteUrl: `https://helenathompson.dev`,
-    image: `src/images/share.png`,
+    image: `/share.png`,
+    twitterHandle: '@hafuhelena'
   },
   plugins: [
     `gatsby-plugin-sharp`,
@@ -36,7 +36,7 @@ module.exports = {
             serialize: ({ query: { site, allMdx } }) => {
               return allMdx.edges.map(edge => {
                 return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
+                  description: edge.node.frontmatter.description,
                   data: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
@@ -52,12 +52,13 @@ module.exports = {
               ) {
                 edges {
                   node {
+                    html
                     fields { slug }
                     frontmatter {
                       title
                       date
+                      description
                     }
-                    html
                   }
                 }
               }

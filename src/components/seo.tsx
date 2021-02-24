@@ -3,9 +3,11 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 interface Props {
-  title?: string
+  title: string
   description?: string
   image?: string
+  imageAlt?: string
+  type?: string
   lang?: string
 }
 
@@ -14,14 +16,21 @@ interface QueryResult {
     siteMetadata: {
       title: string
       description: string
-      author: string
       siteUrl: string
       image: string
+      twitterHandle: string
     }
   }
 }
 
-const SEO: React.FC<Props> = ({ title, description, image, lang = "en" }) => {
+const SEO: React.FC<Props> = ({
+  title,
+  description,
+  image,
+  imageAlt,
+  type = "website",
+  lang = "en",
+}) => {
   const { siteMetadata } = useStaticQuery<QueryResult>(
     graphql`
       query {
@@ -29,17 +38,15 @@ const SEO: React.FC<Props> = ({ title, description, image, lang = "en" }) => {
           siteMetadata {
             title
             description
-            author
             siteUrl
             image
+            twitterHandle
           }
         }
       }
     `
   ).site
 
-  const defaultTitle = siteMetadata.title
-  const metaTtile = title || defaultTitle
   const metaDescription = description || siteMetadata.description
   const metaImage = `${siteMetadata.siteUrl}${image || siteMetadata.image}`
 
@@ -48,8 +55,7 @@ const SEO: React.FC<Props> = ({ title, description, image, lang = "en" }) => {
       htmlAttributes={{
         lang,
       }}
-      title={metaTtile}
-      titleTemplate={title ? `%s | ${defaultTitle}` : defaultTitle}
+      title={title}
       meta={[
         {
           name: `description`,
@@ -60,16 +66,20 @@ const SEO: React.FC<Props> = ({ title, description, image, lang = "en" }) => {
           content: metaImage,
         },
         {
+          property: `og:locale`,
+          content: `en_GB`,
+        },
+        {
+          property: `og:type`,
+          content: type,
+        },
+        {
           property: `og:title`,
-          content: metaTtile,
+          content: title,
         },
         {
           property: `og:description`,
           content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
         },
         {
           property: `og:image`,
@@ -77,19 +87,15 @@ const SEO: React.FC<Props> = ({ title, description, image, lang = "en" }) => {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
-          content: siteMetadata.author,
+          content: siteMetadata.twitterHandle,
         },
         {
-          name: `twitter:title`,
-          content: metaTtile,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
+          name: `twitter:image:alt`,
+          content: imageAlt,
         },
       ]}
     />
