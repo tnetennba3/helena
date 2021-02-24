@@ -16,7 +16,7 @@ const Background = styled.div<BackgroundProps>`
 
 const Content = styled.div`
   position: relative;
-  margin: 0 auto;
+  margin: 1rem auto 0;
   max-width: 960px;
   padding: 0 1rem 1.5rem;
 

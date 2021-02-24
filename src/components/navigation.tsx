@@ -13,25 +13,33 @@ const StyledHeader = styled.header`
   position: sticky;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: inherit;
+  padding: 0.5rem 0 0 0.5rem;
+
+  @media (min-width: ${BREAKPOINT.S}) {
+    padding-right: 0.5rem;
+  }
+
+  @media (min-width: ${BREAKPOINT.M}) {
+    padding: 0.5rem 1rem 0;
+  }
 `
 
 const StyledNav = styled.nav`
   display: flex;
-  margin: 0.5rem 0 0.5rem 0.5rem;
-
-  @media (min-width: ${BREAKPOINT.M}) {
-    margin-left: 1rem;
-  }
 `
 
 const StyledLink = styled(Link)`
   position: relative;
-  margin-right: 0.5rem;
   padding: 0.5rem;
   font-size: ${FONT.SIZE.L};
   text-decoration: none;
+
+  @media (min-width: ${BREAKPOINT.S}) {
+    margin-right: 0.5rem;
+  }
 
   @media (min-width: ${BREAKPOINT.M}) {
     padding: 0.5rem 1rem;
@@ -41,13 +49,12 @@ const StyledLink = styled(Link)`
 const SocialLinks = styled.ul`
   display: flex;
   align-items: center;
-
-  @media (min-width: ${BREAKPOINT.M}) {
-    margin-right: 1rem;
-  }
 `
 
 const SocialLink = styled.a`
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
   padding: 0.5rem;
 
   @media (min-width: ${BREAKPOINT.M}) {

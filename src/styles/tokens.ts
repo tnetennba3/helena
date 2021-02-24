@@ -40,6 +40,7 @@ export const FONT = {
 }
 
 export const BREAKPOINT = {
+  S: "340px",
   M: "640px",
   L: "1024px",
 }
