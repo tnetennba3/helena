@@ -71,7 +71,7 @@ interface Props {
   }
 }
 
-const MyNavigation = () => (
+const MyNavigation: React.FC = () => (
   <StaticQuery
     query={graphql`
       query {
