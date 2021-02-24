@@ -6,7 +6,7 @@ import Img, { FixedObject } from "gatsby-image"
 
 import { FONT, BREAKPOINT, COLOR } from "../styles/tokens"
 
-const StyledHeader = styled.header`
+const Header = styled.header`
   z-index: 100;
   top: 0px;
   position: -webkit-sticky;
@@ -27,11 +27,11 @@ const StyledHeader = styled.header`
   }
 `
 
-const StyledNav = styled.nav`
+const Nav = styled.nav`
   display: flex;
 `
 
-const StyledLink = styled(Link)`
+const NavLink = styled(Link)`
   position: relative;
   padding: 0.5rem;
   font-size: ${FONT.SIZE.L};
@@ -171,15 +171,15 @@ const Icon: React.FC<IconProps> = ({ name, data }) => {
     },
   ]
 
-  return <Img fixed={sources} alt={name} style={{ "vertical-align": "top" }} />
+  return <Img fixed={sources} alt={name} />
 }
 
 const Navigation: React.FC<Props> = ({ data }) => (
-  <StyledHeader>
-    <StyledNav>
-      <StyledLink to="/">Home</StyledLink>
-      <StyledLink to="/blog/">Blog</StyledLink>
-    </StyledNav>
+  <Header>
+    <Nav>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/blog/">Blog</NavLink>
+    </Nav>
     <SocialLinks>
       <li>
         <SocialLink href="https://twitter.com/hafuhelena">
@@ -207,7 +207,7 @@ const Navigation: React.FC<Props> = ({ data }) => (
         </SocialLink>
       </li>
     </SocialLinks>
-  </StyledHeader>
+  </Header>
 )
 
 export default MyNavigation
