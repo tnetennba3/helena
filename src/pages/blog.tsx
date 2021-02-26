@@ -13,7 +13,8 @@ const Small = styled.small`
 `
 
 const ArticleLink = styled(Link)`
-  text-decoration: none;
+  display: block;
+  background: none;
 `
 
 const Divider = styled.hr`
@@ -85,16 +86,16 @@ const BlogPost: React.FC<Node> = ({ node }) => {
         <Small>
           <time dateTime={date}>{dateFormatted}</time>
         </Small>
-        <h2>
-          <ArticleLink to={slug}>{title}</ArticleLink>
-        </h2>
-        <Img fluid={image.childImageSharp.fluid} alt={imageAlt} />
+        <ArticleLink to={slug}>
+          <h2>{title}</h2>
+          <Img fluid={image.childImageSharp.fluid} alt={imageAlt} />
+        </ArticleLink>
         <div dangerouslySetInnerHTML={{ __html: excerpt }} />
         <Small>
-          <ArticleLink to={slug}>
+          <Link to={slug}>
             Read more <span aria-hidden="true">・</span> {node.timeToRead} min
             read
-          </ArticleLink>
+          </Link>
         </Small>
       </article>
     </>
