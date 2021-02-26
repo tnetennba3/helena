@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { StaticQuery, graphql } from "gatsby"
 import Img, { FixedObject } from "gatsby-image"
 
-import { FONT, BREAKPOINT, COLOR } from "../styles/tokens"
+import { FONT, BREAKPOINT } from "../styles/tokens"
 
 const Header = styled.header`
   z-index: 100;
@@ -29,6 +29,7 @@ const Header = styled.header`
 
 const Nav = styled.nav`
   display: flex;
+  align-items: flex-end;
 `
 
 const NavLink = styled(Link)`
@@ -46,25 +47,16 @@ const NavLink = styled(Link)`
   }
 `
 
-const SocialLinks = styled.ul`
+const SocialLinks = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 `
 
 const SocialLink = styled.a`
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 0;
   padding: 0.5rem;
 
   @media (min-width: ${BREAKPOINT.M}) {
-    padding: 0.75rem;
-  }
-
-  &:hover {
-    transition: background-color 0.5s, transform 0.5s ease-out;
-    border-radius: 50%;
-    background-color: ${COLOR.ACCENT.BLUE};
+    padding: 0.5rem 0.75rem;
   }
 `
 
@@ -181,31 +173,21 @@ const Navigation: React.FC<Props> = ({ data }) => (
       <NavLink to="/blog/">Blog</NavLink>
     </Nav>
     <SocialLinks>
-      <li>
-        <SocialLink href="https://twitter.com/hafuhelena">
-          <Icon name="twitter" data={data} />
-        </SocialLink>
-      </li>
-      <li>
-        <SocialLink href="https://www.linkedin.com/in/helena-thompson-developer/">
-          <Icon name="linkedin" data={data} />
-        </SocialLink>
-      </li>
-      <li>
-        <SocialLink href="mailto:helenathompson.dev@gmail.com">
-          <Icon name="email" data={data} />
-        </SocialLink>
-      </li>
-      <li>
-        <SocialLink href="https://github.com/tnetennba3">
-          <Icon name="github" data={data} />
-        </SocialLink>
-      </li>
-      <li>
-        <SocialLink as={Link} to="/rss.xml">
-          <Icon name="rss" data={data} />
-        </SocialLink>
-      </li>
+      <SocialLink href="https://twitter.com/hafuhelena">
+        <Icon name="twitter" data={data} />
+      </SocialLink>
+      <SocialLink href="https://www.linkedin.com/in/helena-thompson-developer/">
+        <Icon name="linkedin" data={data} />
+      </SocialLink>
+      <SocialLink href="mailto:helenathompson.dev@gmail.com">
+        <Icon name="email" data={data} />
+      </SocialLink>
+      <SocialLink href="https://github.com/tnetennba3">
+        <Icon name="github" data={data} />
+      </SocialLink>
+      <SocialLink as={Link} to="/rss.xml">
+        <Icon name="rss" data={data} />
+      </SocialLink>
     </SocialLinks>
   </Header>
 )

@@ -82,13 +82,13 @@ const BlogPost: React.FC<Node> = ({ node }) => {
     <>
       <Divider />
       <article>
-        <ArticleLink to={slug}>
-          <Small>
-            <time dateTime={date}>{dateFormatted}</time>
-          </Small>
-          <h2>{title}</h2>
-          <Img fluid={image.childImageSharp.fluid} alt={imageAlt} />
-        </ArticleLink>
+        <Small>
+          <time dateTime={date}>{dateFormatted}</time>
+        </Small>
+        <h2>
+          <ArticleLink to={slug}>{title}</ArticleLink>
+        </h2>
+        <Img fluid={image.childImageSharp.fluid} alt={imageAlt} />
         <div dangerouslySetInnerHTML={{ __html: excerpt }} />
         <Small>
           <ArticleLink to={slug}>

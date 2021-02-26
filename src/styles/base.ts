@@ -36,10 +36,16 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
+    background: linear-gradient(to bottom, ${COLOR.ACCENT.BLUE} 0%, ${COLOR.ACCENT.BLUE} 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 0.2rem 0.2rem;
     color: inherit;
+    text-decoration: none;
+    transition: background-size .2s;
 
     &:hover {
-      font-weight: ${FONT.WEIGHT.BOLD};
+      background-size: 4px 100%;
     }
 
     &:focus, &:active {
@@ -49,6 +55,10 @@ const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3 {
     margin: 0.5rem 0 0.25rem !important;
+
+    a {
+      background: none;
+    }
   }
 
   h2 {
@@ -92,12 +102,6 @@ const GlobalStyle = createGlobalStyle`
     margin-top: 0.5rem;
     font-size: ${FONT.SIZE.S};
     font-style: italic;
-
-    a {
-      &:hover {
-        font-weight: ${FONT.WEIGHT.BOLD};
-      }
-    }
   }
 }
 `
