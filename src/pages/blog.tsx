@@ -4,44 +4,21 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img, { FluidObject } from "gatsby-image"
 
-import { COLOR, FONT } from "../styles/tokens"
+import { COLOR } from "../styles/tokens"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Article = styled.article`
-  position: relative;
-  margin: 1rem 0;
-  padding: 2px;
-  box-shadow: 0 0 0.5rem ${COLOR.ACCENT.LIGHT_GREY};
-  background-color: ${COLOR.ACCENT.LIGHT_GREY};
-  border-radius: 2px;
-
-  &:hover {
-    transform: scale(1.05, 1.05);
-    transition: all 0.25s ease-out;
-  }
+const Small = styled.small`
+  color: ${COLOR.ACCENT.DARK_GREY};
 `
 
 const ArticleLink = styled(Link)`
-  display: block;
   text-decoration: none;
-
-  &:hover {
-    font-weight: ${FONT.WEIGHT.MEDIUM};
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-  }
 `
 
-const ArticleText = styled.div`
-  margin: 0.75rem 1rem 0.5rem;
+const Divider = styled.hr`
+  border: solid 2px ${COLOR.ACCENT.LIGHT_GREY};
+  margin: 1.5rem 0;
 `
 
 export const query = graphql`
@@ -49,12 +26,13 @@ export const query = graphql`
     allMdx(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1000) {
       edges {
         node {
+          timeToRead
           frontmatter {
             slug
             title
-            description
             date
             dateFormatted: date(formatString: "Do MMMM YYYY")
+            excerpt
             imageAlt
             image {
               childImageSharp {
@@ -72,12 +50,13 @@ export const query = graphql`
 
 interface Node {
   node: {
+    timeToRead: string
     frontmatter: {
       slug: string
       title: string
-      description: string
       date: string
       dateFormatted: string
+      excerpt: string
       imageAlt: string
       image: {
         childImageSharp: {
@@ -88,32 +67,37 @@ interface Node {
   }
 }
 
-const Card: React.FC<Node> = ({ node }) => {
+const BlogPost: React.FC<Node> = ({ node }) => {
   const {
     slug,
     title,
-    description,
     date,
     dateFormatted,
+    excerpt,
     imageAlt,
     image,
   } = node.frontmatter
 
   return (
-    <li key={title}>
-      <Article>
-        <Img fluid={image.childImageSharp.fluid} alt={imageAlt} />
-        <ArticleText>
-          <h2>
-            <ArticleLink to={slug}>{title}</ArticleLink>
-          </h2>
-          <p>{description}</p>
-          <footer>
+    <>
+      <Divider />
+      <article>
+        <ArticleLink to={slug}>
+          <Small>
             <time dateTime={date}>{dateFormatted}</time>
-          </footer>
-        </ArticleText>
-      </Article>
-    </li>
+          </Small>
+          <h2>{title}</h2>
+          <Img fluid={image.childImageSharp.fluid} alt={imageAlt} />
+        </ArticleLink>
+        <div dangerouslySetInnerHTML={{ __html: excerpt }} />
+        <Small>
+          <ArticleLink to={slug}>
+            Read more <span aria-hidden="true">・</span> {node.timeToRead} min
+            read
+          </ArticleLink>
+        </Small>
+      </article>
+    </>
   )
 }
 
@@ -134,8 +118,7 @@ const Blog: React.FC<Props> = ({ data }) => (
         ✍️
       </span>
     </h1>
-    <ol>{data.allMdx.edges.map(Card)}</ol>
-    <p>➕ More to come soon.</p>
+    <ol>{data.allMdx.edges.map(BlogPost)}</ol>
   </Layout>
 )
 

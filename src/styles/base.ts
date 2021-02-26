@@ -52,7 +52,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h2 {
-    font-size: ${FONT.SIZE.L};
+    font-size: ${FONT.SIZE.XL};
     font-weight: ${FONT.WEIGHT.MEDIUM};
   }
 
@@ -78,10 +78,6 @@ const GlobalStyle = createGlobalStyle`
 
   img {
     width: 100%;
-  }
-
-  footer {
-    font-size: ${FONT.SIZE.S};
   }
 
   figure {
