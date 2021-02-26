@@ -6,7 +6,7 @@ import Img, { FluidObject } from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Hide, Divider } from "../components/common"
+import { Hide } from "../components/common"
 
 const ArticleLink = styled(Link)`
   display: block;
@@ -87,7 +87,7 @@ const BlogPost: React.FC<Node> = ({ node }) => {
           </Link>
         </small>
       </article>
-      <Divider />
+      <hr />
     </>
   )
 }

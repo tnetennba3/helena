@@ -103,6 +103,11 @@ const GlobalStyle = createGlobalStyle`
   small {
     color: ${COLOR.ACCENT.DARK_GREY};
   }
+
+  hr {
+    border: solid 2px ${COLOR.ACCENT.LIGHT_GREY};
+    margin: 1.5rem 0;
+  }
 }
 `
 

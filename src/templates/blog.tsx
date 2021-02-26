@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Hide, Divider } from "../components/common"
+import { Hide } from "../components/common"
 
 export const pageQuery = graphql`
   query($slug: String!) {
@@ -78,7 +78,7 @@ const Template: React.FC<Props> = ({ data }) => {
         {timeToRead} min read
       </small>
       <MDXRenderer>{body}</MDXRenderer>
-      <Divider />
+      <hr />
     </Layout>
   )
 }
