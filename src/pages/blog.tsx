@@ -81,7 +81,6 @@ const BlogPost: React.FC<Node> = ({ node }) => {
 
   return (
     <>
-      <Divider />
       <article>
         <Small>
           <time dateTime={date}>{dateFormatted}</time>
@@ -98,6 +97,7 @@ const BlogPost: React.FC<Node> = ({ node }) => {
           </Link>
         </Small>
       </article>
+      <Divider />
     </>
   )
 }

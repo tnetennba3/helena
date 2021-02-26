@@ -11,6 +11,11 @@ const Small = styled.small`
   color: ${COLOR.ACCENT.DARK_GREY};
 `
 
+const Divider = styled.hr`
+  border: solid 2px ${COLOR.ACCENT.LIGHT_GREY};
+  margin: 1.5rem 0;
+`
+
 export const pageQuery = graphql`
   query($slug: String!) {
     mdx(frontmatter: { slug: { eq: $slug } }) {
@@ -83,6 +88,7 @@ const Template: React.FC<Props> = ({ data }) => {
         <span aria-hidden="true">・</span> {timeToRead} min read
       </Small>
       <MDXRenderer>{body}</MDXRenderer>
+      <Divider />
     </Layout>
   )
 }
