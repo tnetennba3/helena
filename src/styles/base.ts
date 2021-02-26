@@ -99,6 +99,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${FONT.SIZE.S};
     font-style: italic;
   }
+
+  small {
+    color: ${COLOR.ACCENT.DARK_GREY};
+  }
 }
 `
 

@@ -1,20 +1,10 @@
 import React from "react"
-import styled from "styled-components"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { graphql } from "gatsby"
 
-import { COLOR } from "../styles/tokens"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-const Small = styled.small`
-  color: ${COLOR.ACCENT.DARK_GREY};
-`
-
-const Divider = styled.hr`
-  border: solid 2px ${COLOR.ACCENT.LIGHT_GREY};
-  margin: 1.5rem 0;
-`
+import { Hide, Divider } from "../components/common"
 
 export const pageQuery = graphql`
   query($slug: String!) {
@@ -83,10 +73,10 @@ const Template: React.FC<Props> = ({ data }) => {
         imageAlt={imageAlt}
       />
       <h1>{title}</h1>
-      <Small>
-        <time dateTime={date}>{dateFormatted}</time>{" "}
-        <span aria-hidden="true">・</span> {timeToRead} min read
-      </Small>
+      <small>
+        <time dateTime={date}>{dateFormatted}</time> <Hide>・</Hide>{" "}
+        {timeToRead} min read
+      </small>
       <MDXRenderer>{body}</MDXRenderer>
       <Divider />
     </Layout>
