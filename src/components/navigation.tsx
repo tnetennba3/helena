@@ -13,36 +13,38 @@ const Header = styled.header`
   position: sticky;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   background-color: inherit;
-  padding: 0.5rem 0 0 0.5rem;
+  padding: 0.5rem 0.5rem 0 1rem;
 
   @media (min-width: ${BREAKPOINT.S}) {
-    padding-right: 0.5rem;
-  }
-
-  @media (min-width: ${BREAKPOINT.M}) {
-    padding: 0.5rem 1rem 0;
+    padding-right: 1rem;
   }
 `
 
 const Nav = styled.nav`
+  width: 200px;
   display: flex;
-  align-items: flex-end;
+  justify-content: space-between;
+
+  @media (min-width: ${BREAKPOINT.S}) {
+    width: auto;
+  }
 `
 
 const NavLink = styled(Link)`
   position: relative;
-  padding: 0.5rem;
-  font-size: ${FONT.SIZE.L};
-  text-decoration: none;
+  margin-right: 0.5rem;
+  padding: 0.5rem 0;
+  font-size: ${FONT.SIZE.M};
+  background: none;
 
   @media (min-width: ${BREAKPOINT.S}) {
-    margin-right: 0.5rem;
+    padding: 0.5rem;
+    font-size: ${FONT.SIZE.L};
   }
 
-  @media (min-width: ${BREAKPOINT.M}) {
+  @media (min-width: ${BREAKPOINT.L}) {
     padding: 0.5rem 1rem;
   }
 `
@@ -55,8 +57,12 @@ const SocialLinks = styled.div`
 const SocialLink = styled.a`
   padding: 0.5rem;
 
-  @media (min-width: ${BREAKPOINT.M}) {
+  @media (min-width: ${BREAKPOINT.S}) {
     padding: 0.5rem 0.75rem;
+  }
+
+  @media (max-width: ${BREAKPOINT.M}) {
+    background: none;
   }
 `
 
