@@ -60,12 +60,21 @@ const SocialLink = styled.a`
   }
 `
 
+interface Edge {
+  node: {
+    iconName: string
+    childImageSharp: {
+      small: FixedObject
+      medium: FixedObject
+      large: FixedObject
+    }
+  }
+}
+
 interface Props {
   data: {
-    [key: string]: {
-      childImageSharp: {
-        fixed: FixedObject
-      }
+    allFile: {
+      edges: Edge[]
     }
   }
 }
@@ -74,73 +83,21 @@ const MyNavigation: React.FC = () => (
   <StaticQuery
     query={graphql`
       query {
-        twitterMobile: file(relativePath: { eq: "icons/twitter.png" }) {
-          childImageSharp {
-            fixed(height: 18) {
-              ...GatsbyImageSharpFixed_withWebp
-            }
-          }
-        }
-        twitterDesktop: file(relativePath: { eq: "icons/twitter.png" }) {
-          childImageSharp {
-            fixed(height: 26) {
-              ...GatsbyImageSharpFixed_withWebp
-            }
-          }
-        }
-        linkedinMobile: file(relativePath: { eq: "icons/linkedin.png" }) {
-          childImageSharp {
-            fixed(height: 18) {
-              ...GatsbyImageSharpFixed_withWebp
-            }
-          }
-        }
-        linkedinDesktop: file(relativePath: { eq: "icons/linkedin.png" }) {
-          childImageSharp {
-            fixed(height: 26) {
-              ...GatsbyImageSharpFixed_withWebp
-            }
-          }
-        }
-        emailMobile: file(relativePath: { eq: "icons/email.png" }) {
-          childImageSharp {
-            fixed(height: 18) {
-              ...GatsbyImageSharpFixed_withWebp
-            }
-          }
-        }
-        emailDesktop: file(relativePath: { eq: "icons/email.png" }) {
-          childImageSharp {
-            fixed(height: 26) {
-              ...GatsbyImageSharpFixed_withWebp
-            }
-          }
-        }
-        githubMobile: file(relativePath: { eq: "icons/github.png" }) {
-          childImageSharp {
-            fixed(height: 18) {
-              ...GatsbyImageSharpFixed_withWebp
-            }
-          }
-        }
-        githubDesktop: file(relativePath: { eq: "icons/github.png" }) {
-          childImageSharp {
-            fixed(height: 26) {
-              ...GatsbyImageSharpFixed_withWebp
-            }
-          }
-        }
-        rssMobile: file(relativePath: { eq: "icons/rss.png" }) {
-          childImageSharp {
-            fixed(height: 18) {
-              ...GatsbyImageSharpFixed_withWebp
-            }
-          }
-        }
-        rssDesktop: file(relativePath: { eq: "icons/rss.png" }) {
-          childImageSharp {
-            fixed(height: 26) {
-              ...GatsbyImageSharpFixed_withWebp
+        allFile(filter: { relativeDirectory: { eq: "icons/social" } }) {
+          edges {
+            node {
+              iconName: name
+              childImageSharp {
+                small: fixed(height: 15) {
+                  ...GatsbyImageSharpFixed_withWebp
+                }
+                medium: fixed(height: 20) {
+                  ...GatsbyImageSharpFixed_withWebp
+                }
+                large: fixed(height: 26) {
+                  ...GatsbyImageSharpFixed_withWebp
+                }
+              }
             }
           }
         }
@@ -150,17 +107,18 @@ const MyNavigation: React.FC = () => (
   />
 )
 
-interface IconProps extends Props {
+interface IconProps {
   name: string
+  edges: Edge[]
 }
 
-const Icon: React.FC<IconProps> = ({ name, data }) => {
+const Icon: React.FC<IconProps> = ({ name, edges }) => {
+  const { node } = edges.find(({ node }) => node.iconName === name) as Edge
+  const { small, medium, large } = node.childImageSharp
   const sources = [
-    data[name + "Mobile"].childImageSharp.fixed,
-    {
-      ...data[name + "Desktop"].childImageSharp.fixed,
-      media: `(min-width: ${BREAKPOINT.M})`,
-    },
+    small,
+    { ...large, media: `(min-width: ${BREAKPOINT.L})` },
+    { ...medium, media: `(min-width: ${BREAKPOINT.S})` },
   ]
 
   return <Img fixed={sources} alt={name} />
@@ -174,19 +132,16 @@ const Navigation: React.FC<Props> = ({ data }) => (
     </Nav>
     <SocialLinks>
       <SocialLink href="https://twitter.com/hafuhelena">
-        <Icon name="twitter" data={data} />
+        <Icon name="twitter" edges={data.allFile.edges} />
       </SocialLink>
       <SocialLink href="https://www.linkedin.com/in/helena-thompson-developer/">
-        <Icon name="linkedin" data={data} />
+        <Icon name="linkedin" edges={data.allFile.edges} />
       </SocialLink>
       <SocialLink href="mailto:helenathompson.dev@gmail.com">
-        <Icon name="email" data={data} />
+        <Icon name="email" edges={data.allFile.edges} />
       </SocialLink>
       <SocialLink href="https://github.com/tnetennba3">
-        <Icon name="github" data={data} />
-      </SocialLink>
-      <SocialLink as={Link} to="/rss.xml">
-        <Icon name="rss" data={data} />
+        <Icon name="github" edges={data.allFile.edges} />
       </SocialLink>
     </SocialLinks>
   </Header>
