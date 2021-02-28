@@ -15,7 +15,11 @@ const ArticleLink = styled(Link)`
 
 export const query = graphql`
   query {
-    allMdx(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1000) {
+    allMdx(
+      filter: { fileAbsolutePath: { regex: "/blog/" } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 1000
+    ) {
       edges {
         node {
           timeToRead
