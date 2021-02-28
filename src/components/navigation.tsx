@@ -135,6 +135,7 @@ const Navigation: React.FC<Props> = ({ data }) => (
     <Nav>
       <NavLink to="/">Home</NavLink>
       <NavLink to="/blog/">Blog</NavLink>
+      <NavLink to="/journal/">Journal</NavLink>
     </Nav>
     <SocialLinks>
       <SocialLink href="https://twitter.com/hafuhelena">
