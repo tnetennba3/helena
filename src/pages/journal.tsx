@@ -7,17 +7,25 @@ import SEO from "../components/seo"
 
 export const query = graphql`
   query {
-    allMdx(
+    image: file(relativePath: { eq: "journal-cover.png" }) {
+      childImageSharp {
+        fixed {
+          src
+        }
+      }
+    }
+    journalEntries: allMdx(
       filter: { fileAbsolutePath: { regex: "/journal/" } }
       sort: { order: DESC, fields: [frontmatter___date] }
       limit: 1000
     ) {
       edges {
         node {
-          body
           frontmatter {
             date
+            dateFormatted: date(formatString: "Do MMMM YYYY")
           }
+          body
         }
       }
     }
@@ -51,7 +59,14 @@ const JournalEntry: React.FC<Node> = ({ node }) => (
 
 interface Props {
   data: {
-    allMdx: {
+    image: {
+      childImageSharp: {
+        fixed: {
+          src: string
+        }
+      }
+    }
+    journalEntries: {
       edges: Node[]
     }
   }
@@ -59,7 +74,12 @@ interface Props {
 
 const Journal: React.FC<Props> = ({ data }) => (
   <Layout>
-    <SEO title="Helena’s Japanese Journal" />
+    <SEO
+      title="Helena’s Japanese Journal"
+      description="I keep a Japanese journal to force myself to practice writing. Every morning, I set a timer for ten minutes and see what I can output in that time."
+      image={data.image.childImageSharp.fixed.src}
+      imageAlt="Helena in Ueno Park, Japan."
+    />
     <h1>
       This is where I write in Japanese.{" "}
       <span role="img" aria-label="Japanese Flag">
@@ -71,18 +91,18 @@ const Journal: React.FC<Props> = ({ data }) => (
       the language. Whether that’s hearing my mum scold me as a child, watching
       TV shows, or more recently,{" "}
       <Link to="/blog/i-read-my-first-book-in-japanese/">reading books</Link>.
-      But I don't get much practice actually using the language myself.
+      But I don't get much practice actually using the language.
     </p>
     <p>
-      To fix that, I have set myself the goal to write in Japanese every day.
-      Every morning, I set a timer for 10 minutes and just see where I can get
-      to writing a journal entry. There are bound to be a lot of mistakes here.
-      At some point, I might go back and see if I can improve on them. But for
-      now, I think I will get a lot out of just forcing myself to write. And
-      hopefully, as I get better at writing, it will be motivating to have a
-      record of how far I've come.
+      So, I have set myself the goal to write in Japanese every day. Every
+      morning, I set a timer for ten minutes and see what I can write in that
+      time. There are bound to be a lot of mistakes here. At some point, I might
+      go back and see if I can correct each post. But for now, I think I will
+      get a lot out of just forcing myself to write. And hopefully, as I get
+      better at writing, it will be motivating to have a record of how far I've
+      come.
     </p>
-    <ol>{data.allMdx.edges.map(JournalEntry)}</ol>
+    <ol>{data.journalEntries.edges.map(JournalEntry)}</ol>
     <hr />
   </Layout>
 )
