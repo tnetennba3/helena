@@ -47,8 +47,9 @@ module.exports = {
             query: `
             {
               allMdx(
-                limit: 1000,
+                filter: { fileAbsolutePath: { regex: "/blog/" } }
                 sort: { order: DESC, fields: [frontmatter___date] }
+                limit: 1000
               ) {
                 edges {
                   node {
