@@ -1,7 +1,6 @@
-import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img, { FluidObject } from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -75,7 +74,7 @@ const BlogPost: React.FC<Node> = ({ node }) => {
   } = node.frontmatter
 
   return (
-    <>
+    <li>
       <article>
         <small>
           <time dateTime={date}>{dateFormatted}</time>
@@ -92,7 +91,7 @@ const BlogPost: React.FC<Node> = ({ node }) => {
         </small>
       </article>
       <hr />
-    </>
+    </li>
   )
 }
 
