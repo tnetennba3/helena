@@ -1,4 +1,226 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Helena's Blog RSS Feed]]></title><description><![CDATA[I'm a Software Engineer and I spend an unhealthy amount of my spare time studying Japanese.]]></description><link>https://helenathompson.dev</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 14 Mar 2021 12:33:34 GMT</lastBuildDate><item><title><![CDATA[How I felt about inheriting £200,000]]></title><description><![CDATA[There are a bunch of feelings to disentangle when you inherit a large sum of money. This is my story of how I confronted those feelings.]]></description><link>https://helenathompson.dev/how-i-felt-about-inheriting-200000/</link><guid isPermaLink="false">https://helenathompson.dev/how-i-felt-about-inheriting-200000/</guid><pubDate>Mon, 01 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;People don’t like to talk about money, much less money that’s inherited. But as
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Helena's Blog RSS Feed]]></title><description><![CDATA[I'm a Software Engineer and I spend an unhealthy amount of my spare time studying Japanese.]]></description><link>https://helenathompson.dev</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 06 May 2021 12:41:37 GMT</lastBuildDate><item><title><![CDATA[A year into learning Japanese]]></title><description><![CDATA[It’s been just over a year since I started learning Japanese so I thought it was a good time to stop, reflect over my journey and consider what I’ve learnt.]]></description><link>https://helenathompson.dev/what-i-learnt-learning-a-language-for-a-year/</link><guid isPermaLink="false">https://helenathompson.dev/what-i-learnt-learning-a-language-for-a-year/</guid><pubDate>Thu, 06 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;It’s been just over a year since I started learning Japanese so I thought it was
+a good time to stop, reflect over my journey and consider what I’ve learnt. I
+started on 19th April 2020 and since then I’ve dedicated 1,378 hours to studying
+(according to my &lt;a href=&quot;https://productivitychallengetimer.com/&quot;&gt;timer app&lt;/a&gt;). That’s
+just over 25 hours a week, quite a lot on top of a full time job. In this post,
+I will try to justify how I spent that much time on one hobby (neglecting
+everything else in my life) as well as point people to the resources I used.&lt;/p&gt;&lt;h2&gt;How did I learn Japanese?&lt;/h2&gt;&lt;h3&gt;Setting goals&lt;/h3&gt;&lt;p&gt;I’m one of those cool kids that likes to set goals for myself even outside of
+work. So in order to make sure I was taking Japanese seriously, I set some goals
+up front. A lot of these were around passing a set of exams called the
+&lt;a href=&quot;https://www.jlpt.jp/e/about/index.html&quot;&gt;JLPT (Japanese-Language Proficiency Test)&lt;/a&gt;.
+Unfortunately, I couldn’t take these in person (because of the whole COVID
+thing) but I did take the mock papers on the dates I set in advance. Happily, I
+&amp;quot;passed&amp;quot; N5 with a result of 91% in July, N4 with 91% in August and N3 with 80%
+in December. I’m planning to take a mock N2 test on July 4th, the day the exam
+would have happened in London if it hadn’t been cancelled. And hopefully, I’ll
+be able to take the real thing in December and have a shiny certificate to show
+for it (plus, validate all the work I put in).&lt;/p&gt;&lt;p&gt;The other goal I set for myself way back in April 2020 was to read and finish
+Harry Potter and the Philosopher’s Stone, in Japanese, by the end of the year.
+Frankly, it took me ages to do so, but I did finish the book and
+&lt;a href=&quot;/blog/i-read-my-first-book-in-japanese/&quot;&gt;wrote about it another blog post&lt;/a&gt; to
+celebrate the occassion.&lt;/p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position:relative;display:block;margin-left:auto;margin-right:auto;max-width:880px&quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/9294b8c2561271e22dc6cabc46234697/c1dc6/illustrated-book.jpg&quot; style=&quot;display:block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom:60%;position:relative;bottom:0;left:0;background-image:url(&amp;#x27;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEAwX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQP/2gAMAwEAAhADEAAAAX0gfN9ImDf/xAAbEAADAAIDAAAAAAAAAAAAAAAAAQIDERITIf/aAAgBAQABBQKblHfAsiYluuCJ8X//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwGI/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8Bqv/EABUQAQEAAAAAAAAAAAAAAAAAABEg/9oACAEBAAY/Aiv/xAAZEAEBAQEBAQAAAAAAAAAAAAABABEhMZH/2gAIAQEAAT8hEE9jT1+RmgpF0nDewzC//9oADAMBAAIAAwAAABBUH//EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oACAEDAQE/ECQ//8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/EG1r/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARITFRYf/aAAgBAQABPxBWVcWruAficjQodciPXymDYQm4wWSnbez/2Q==&amp;#x27;);background-size:cover;display:block&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;My illustrated copy of Harry Potter and the Philosopher’s Stone.&quot; title=&quot;Illustrated books are fun.&quot; src=&quot;/static/9294b8c2561271e22dc6cabc46234697/f84cf/illustrated-book.jpg&quot; srcSet=&quot;/static/9294b8c2561271e22dc6cabc46234697/27dc7/illustrated-book.jpg 220w,/static/9294b8c2561271e22dc6cabc46234697/fe55e/illustrated-book.jpg 440w,/static/9294b8c2561271e22dc6cabc46234697/f84cf/illustrated-book.jpg 880w,/static/9294b8c2561271e22dc6cabc46234697/be3c7/illustrated-book.jpg 1320w,/static/9294b8c2561271e22dc6cabc46234697/c7bbe/illustrated-book.jpg 1760w,/static/9294b8c2561271e22dc6cabc46234697/c1dc6/illustrated-book.jpg 4113w&quot; sizes=&quot;(max-width: 880px) 100vw, 880px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0&quot; loading=&quot;lazy&quot;/&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Illustrated books are fun.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;h3&gt;Learning how to learn&lt;/h3&gt;&lt;p&gt;At the very beginning, I spent a good deal of time researching how to learn
+Japanese. Being a spoiled native English speaker, my main exposure to formal
+language learning was (not really) learning German at school. My first baby
+step, therefore, was to learm how to learn. On one of my internet explorations,
+I found a 177 page
+&lt;a href=&quot;https://docs.google.com/document/d/10bRzVblKVOsQJjTc2PIi1Gbj_LrsJCkMkh0SutXCZdI/edit&quot;&gt;Google Doc&lt;/a&gt;
+that detailed the author’s experience learning Japanese and their recommended
+approach. It’s packed with information so I suggest checking it out if you want
+to learn Japanese and don’t know where to start.&lt;/p&gt;&lt;p&gt;After &lt;del&gt;reading&lt;/del&gt; skimming over this document, I started to reframe what
+learning Japanese actually meant. Before, I had this idea that I would be
+training a particular skill (the ability to Japanese?) But it turns out language
+acquisition is a bit more complex than that and includes multiple skills. There
+are passive skills, such as listening and reading, which determine how well you
+can understand Japanese in different settings. As well as active skills,
+speaking and writing, which determine how well you can communciate. Underpinning
+all these skills are the building blocks of the language, grammar and
+vocabulary.&lt;/p&gt;&lt;p&gt;Structuring my language learning around these building blocks and skills allowed
+me to allocate my time most effectively. Early on, I decided to prioritise
+listening and reading over speaking and writing. I knew it would be much easier
+to find Japanese audio and text than it is to befriend people who could speak
+the language, something I wasn’t yet confident enough to do. I could also shift
+my focus depending on the parts of the language I was weakest at. This was an
+ongoing analysis that I could do, say, when I was reading a book and noticed
+that I was spending more time looking up kanji and vocab than I was on grammar
+points. Or when I struggled to understand a sentence when it was written down
+but could comprehend it instantly when it was spoken aloud in an audiobook.
+These kind of observations meant that I could continually tweak my study plan to
+get the most out of learning Japanese.&lt;/p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position:relative;display:block;margin-left:auto;margin-right:auto;max-width:820px&quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/38a4172ed53b1264d4e88907e7e6edc9/9f82e/time-allocation-pie-chart.png&quot; style=&quot;display:block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom:61.36363636363637%;position:relative;bottom:0;left:0;background-image:url(&amp;#x27;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAACBUlEQVQoz22SS2/TQBSF/YuRWADqCgmxYMuCDQskxIIl0Kq0blBbRAVICARRgZLEeThpIH47HtvjsceHO2OnMqQjHU/8yDfn3nMNxhiCIIBaUkrUdU2ine6rqkKWMcRJinks4OUVPa31t+q7zb75rZbhui76/T7iONaAouAohEQajrG+eAjHOsZ44eHAirFnpThbZAg1+F/oFZBzjiiKIITQQDKJukzA7eeIv9xA+OMRxvPf2B+t8WrEsEt6PU7ht1DZOtzIwP+LypXBe0j/BHz6BGz4GEkSw16X2t2e1UBP7AyVrLf+bpRliTzPyVlbBl+hco9IPcjos+7n1Vnk4MMyxy5BldvLRCBnCWa2DZsUhiEMdRkMBmD0Qh0o4l8EMzVUckdHoKBV26dVWmmHCvjd47oiXgiqgtpE7TNUsk26TbKSEdAxUZJDCL951gGq3qmyXxLw3C0a592SO/U0W75ATe7gH2IdDrd6dO4V2p3SJBJbwRjdhHR5kkN4b/Hx4hPun05gDkP4mYDDBL6tcuxTwsrhwSRFVsrtsemeLtsXP//4uHk4xc4bGzu9Ke6dznH32MaDs6UemRdDBisU1w92URTwPE83tHvau2lMkBnuHE1x2yTRfsuc4Gk/wDgqr4VpoEpnNpshTVM92GqMKpJKbxll6A19PPvqaJmjECu27awL/QtvRY2vfNChjQAAAABJRU5ErkJggg==&amp;#x27;);background-size:cover;display:block&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Pie chart showing how I allocated my time learning Japanese with 42% on kanji and vocab, 23% on listening, 23% on reading and 7% on grammar.&quot; title=&quot;How I allocated my 1,378 hours of learning Japanese.&quot; src=&quot;/static/38a4172ed53b1264d4e88907e7e6edc9/9f82e/time-allocation-pie-chart.png&quot; srcSet=&quot;/static/38a4172ed53b1264d4e88907e7e6edc9/c8042/time-allocation-pie-chart.png 220w,/static/38a4172ed53b1264d4e88907e7e6edc9/48c0e/time-allocation-pie-chart.png 440w,/static/38a4172ed53b1264d4e88907e7e6edc9/9f82e/time-allocation-pie-chart.png 820w&quot; sizes=&quot;(max-width: 820px) 100vw, 820px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0&quot; loading=&quot;lazy&quot;/&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;How I allocated my 1,378 hours of learning Japanese.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;h3&gt;Kanji and vocabulary&lt;/h3&gt;&lt;p&gt;I spent a significant chunk (nearly 600 hours) of my time learning kanji and
+vocabulary. It was the area I spent the most time in because kanji is simply the
+hardest part of the language, and one where I didn’t have a head start in. There
+are thousands of kanji characters and it’s one of the reasons why Japanese is
+considered
+&lt;a href=&quot;https://effectivelanguagelearning.com/language-guide/language-difficulty/&quot;&gt;the hardest language for a native English speaker to learn&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;I researched a few ways I could learn kanji and ultimately decided on
+&lt;a href=&quot;https://www.wanikani.com/&quot;&gt;WaniKani&lt;/a&gt;. It’s a web app that teaches kanji and
+vocabulary using mnemonics and spaced repetition. It’s quite pricey ($299 for a
+lifetime subscription) but, unlike free resources, everything is laid out for
+you. All you need to do is turn up, learn some stuff and try to progress to the
+next level. As you progress through the levels and finally take down the boss at
+level 60 (the boss &lt;em&gt;might&lt;/em&gt; be made-up), you’ll have learned over 2000 kanji.
+You’ll have also learned 8000 supplementary vocabulary which contain the kanji
+you learned and are there to solidify your knowledge.&lt;/p&gt;&lt;p&gt;I actually reached level 60 a week ago! I still have a ton of items to review
+but have otherwise completed the course. Having just over 2000 kanji floating
+around my brain is a massive help when I want to read practically anything.
+There are still quite a lot of characters that I encounter in the wild that I
+don’t know. But I am confident I have the tools to learn more kanji once I come
+across them.&lt;/p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position:relative;display:block;margin-left:auto;margin-right:auto;max-width:880px&quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/3c7d71080d511e969f04ab34ebe7c2e9/b768e/cupcakes.jpg&quot; style=&quot;display:block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom:66.81818181818181%;position:relative;bottom:0;left:0;background-image:url(&amp;#x27;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAgADBf/EABQBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAemskjhJ/8QAGBAAAwEBAAAAAAAAAAAAAAAAAAETEBL/2gAIAQEAAQUC2aJo5R//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEv/aAAgBAwEBPwGUv//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/Aaf/xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAZEAADAQEBAAAAAAAAAAAAAAAAATERIVH/2gAIAQEAAT8hWJVHNOC63qykbMpmkvD/2gAMAwEAAgADAAAAEMsf/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAFREf/aAAgBAwEBPxBrTNP/xAAXEQADAQAAAAAAAAAAAAAAAAAAARFR/9oACAECAQE/EKwrP//EABwQAQACAgMBAAAAAAAAAAAAAAEAESExQVFhcf/aAAgBAQABPxDvDbniGAstLDyUqREfYmybCAVcX8JiBQUWz//Z&amp;#x27;);background-size:cover;display:block&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Cupcakes.&quot; title=&quot;There’s a tradition to have cake when you reach level 60 — I still need to get mine!&quot; src=&quot;/static/3c7d71080d511e969f04ab34ebe7c2e9/f84cf/cupcakes.jpg&quot; srcSet=&quot;/static/3c7d71080d511e969f04ab34ebe7c2e9/27dc7/cupcakes.jpg 220w,/static/3c7d71080d511e969f04ab34ebe7c2e9/fe55e/cupcakes.jpg 440w,/static/3c7d71080d511e969f04ab34ebe7c2e9/f84cf/cupcakes.jpg 880w,/static/3c7d71080d511e969f04ab34ebe7c2e9/be3c7/cupcakes.jpg 1320w,/static/3c7d71080d511e969f04ab34ebe7c2e9/b768e/cupcakes.jpg 1350w&quot; sizes=&quot;(max-width: 880px) 100vw, 880px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0&quot; loading=&quot;lazy&quot;/&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;There’s a tradition to have cake when you reach level 60 — I still need to get mine!&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;h3&gt;Grammar&lt;/h3&gt;&lt;p&gt;Compared to kanji and vocabulary, I didn’t spend a significant amount of time
+studying grammar. In fact I only spent 90 hours doing so. Thankfully, I already
+had an inuitive understanding of common grammar patterns that was ingrained in
+me from when I was a child. So when I didn’t understand something, very rarely
+was it because of my lack of familiarity with the grammar. Instead, it was
+usually because I had no idea what the kanji characters were or what the
+vocabulary meant.&lt;/p&gt;&lt;p&gt;When I did study grammar, I used textbooks (because that was what the internet
+suggested). I went through the very popular
+&lt;a href=&quot;https://www.goodreads.com/book/show/10833581-genki-i&quot;&gt;Genki I&lt;/a&gt;,
+&lt;a href=&quot;https://www.goodreads.com/book/show/12899848-genki-ii&quot;&gt;Genki II&lt;/a&gt; and
+&lt;a href=&quot;https://www.goodreads.com/book/show/6618452-tobira?from_search=true&amp;amp;from_srp=true&amp;amp;qid=Uco4yDM1AR&amp;amp;rank=1&quot;&gt;Tobira&lt;/a&gt;
+textbooks, in that order. They roughly teach N5, N4 and N3 level grammar
+respectively. Up next, I have the &lt;span lang=&quot;ja&quot;&gt;新完全マスター文法 日本語能力試験
+N2&lt;/span&gt;
+(&lt;a href=&quot;https://www.goodreads.com/book/show/25617186-n2&quot;&gt;New Kanzen Master Grammar JLPT N2&lt;/a&gt;)
+textbook which I will dive into soon.&lt;/p&gt;&lt;h3&gt;Listening&lt;/h3&gt;&lt;p&gt;I spent around 320 hours listening to Japanese in the past year. In the
+beginning, it was a skill far beyond my reading ability so it was a way to
+immerse myself in Japanese without having to do too much studying up front. I
+started with a
+&lt;a href=&quot;https://www.youtube.com/watch?v=Q1QpZdCHHoA&amp;amp;list=PLDKkKPYyoB3ANuP72zvJClW2zHcpF5prO&quot;&gt;Let&amp;#x27;s Play series on Stardew Valley&lt;/a&gt;.
+It’s a game I’ve spent hundreds of hours on so I could pick up a lot of words
+just from the context. It was nice to be able to wind down in the evening and
+feel like I’m studying when all I’m doing is watching someone play Stardew
+Valley. I also listened to a lot of
+&lt;a href=&quot;https://www.stitcher.com/show/small-talk-in-japanese&quot;&gt;&amp;#x27;Let’s learn Japanese from small talk!&amp;#x27; (podcast)&lt;/a&gt;
+when I was cooking and watched a bunch of anime when I was eating. (As an aside,
+&lt;a href=&quot;https://www.animefeminist.com/anifem-recommends/&quot;&gt;AnimeFeminist&lt;/a&gt; is a great
+place to discover feminist-friendly anime, if you care about that sort of
+thing.) I even rewatched all of The Good Place with Japanese audio — highly
+recommend.&lt;/p&gt;&lt;h3&gt;Reading&lt;/h3&gt;&lt;p&gt;I spent a similar amount on reading (314 hours) as I did on listening. I’m still
+better at understanding spoken Japanese than I am written Japanese but I have
+made huge strides in the past year. At the start, I could barely read hiragana
+and katakana (kanji isn’t the only writing system, just the hardest) and would
+struggle to read a &lt;a href=&quot;https://www3.nhk.or.jp/news/easy/&quot;&gt;NHK Easy News&lt;/a&gt; article.
+Now, I’m able to read whole books in Japanese and read my latest, the third in
+the Kiki’s Delivery Service series, at 68% of audiobook speed.&lt;/p&gt;&lt;p&gt;I’m still planning to read two books a month this year. I’ve read four so far,
+so am a bit behind. But, I’m hoping to catch up as my reading speed improves. I
+also have a backlog of video games I’d like to get through at some point which
+will definitely challenge my reading ability.&lt;/p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position:relative;display:block;margin-left:auto;margin-right:auto;max-width:880px&quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/f21bedcde2b674267d9ca110760daea7/0f98f/fire-emblem-three-houses.jpg&quot; style=&quot;display:block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom:56.36363636363636%;position:relative;bottom:0;left:0;background-image:url(&amp;#x27;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAFBlDIqksj/xAAYEAEBAQEBAAAAAAAAAAAAAAABABEDAv/aAAgBAQABBQIzHqeo7ZMRf//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABcQAAMBAAAAAAAAAAAAAAAAAAABESD/2gAIAQEABj8CFM//xAAZEAADAQEBAAAAAAAAAAAAAAAAARExIXH/2gAIAQEAAT8h7XdwaNmEEQzGcfgzh//aAAwDAQACAAMAAAAQhz//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAWEQEBAQAAAAAAAAAAAAAAAAARAAH/2gAIAQIBAT8QHGL/xAAbEAEBAAIDAQAAAAAAAAAAAAABEQAhMUFR0f/aAAgBAQABPxBbNVxNHtwrAG6kj5kWKezn7mgXVmEAYY7TP//Z&amp;#x27;);background-size:cover;display:block&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Dimitri from Fire Emblem: Three Houses.&quot; title=&quot;I would love to do another run of Fire Emblem: Three Houses once my Japanese is up to scratch.&quot; src=&quot;/static/f21bedcde2b674267d9ca110760daea7/f84cf/fire-emblem-three-houses.jpg&quot; srcSet=&quot;/static/f21bedcde2b674267d9ca110760daea7/27dc7/fire-emblem-three-houses.jpg 220w,/static/f21bedcde2b674267d9ca110760daea7/fe55e/fire-emblem-three-houses.jpg 440w,/static/f21bedcde2b674267d9ca110760daea7/f84cf/fire-emblem-three-houses.jpg 880w,/static/f21bedcde2b674267d9ca110760daea7/be3c7/fire-emblem-three-houses.jpg 1320w,/static/f21bedcde2b674267d9ca110760daea7/c7bbe/fire-emblem-three-houses.jpg 1760w,/static/f21bedcde2b674267d9ca110760daea7/0f98f/fire-emblem-three-houses.jpg 1920w&quot; sizes=&quot;(max-width: 880px) 100vw, 880px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0&quot; loading=&quot;lazy&quot;/&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;I would love to do another run of Fire Emblem: Three Houses once my Japanese is up to scratch.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;h3&gt;Speaking&lt;/h3&gt;&lt;p&gt;Pretty much the only person I speak to in Japanese is my mum. I’ve spent 27
+hours speaking Japanese in the past year so that’s 27 hours on the phone with my
+mum. I’ve definitely improved since I started, but I think that’s mostly down to
+how much time I’ve spent in the other areas of my study. Going forward, I might
+try to find a tutor on &lt;a href=&quot;https://www.italki.com/?hl=en&quot;&gt;italki&lt;/a&gt; and even attempt
+to talk to strangers on &lt;a href=&quot;https://www.hellotalk.com/?lang=en&quot;&gt;HelloTalk&lt;/a&gt;,
+whenever I pluck up the courage to do so.&lt;/p&gt;&lt;h3&gt;Writing&lt;/h3&gt;&lt;p&gt;Finally, writing is the skill that I’ve dedicated the least amount of time on
+(15 hours). I had planned to &lt;a href=&quot;/journal/&quot;&gt;write a journal entry every day&lt;/a&gt; but I
+kind of fell out of habit on that one. At some point I will pick it up again but
+it is hard. As much as I can comprehend a fair amount when I’m listening or
+reading, being able to produce coherent Japanese on the fly is something I need
+more practice at. In terms of handwriting Japanese, I haven’t spent any time on
+it at all. Most of my life is spent on the computer and I barely handwrite in
+English anyway. So it’s on the bottom of my list of priorities at the moment.&lt;/p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position:relative;display:block;margin-left:auto;margin-right:auto;max-width:880px&quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/e598d2d6f01e9cbd05c16a9158253ce5/e44b7/calligraphy.jpg&quot; style=&quot;display:block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom:66.81818181818181%;position:relative;bottom:0;left:0;background-image:url(&amp;#x27;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/9oADAMBAAIQAxAAAAE9bDMpaJsv/8QAGRAAAgMBAAAAAAAAAAAAAAAAAQIAAwQR/9oACAEBAAEFAqKySBoE52ZgRXpexJUzsn//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAeEAACAQMFAAAAAAAAAAAAAAAAAREhImECMkFRkf/aAAgBAQAGPwKU16cMuTnBSK4NNyr0jcf/xAAaEAEBAQEAAwAAAAAAAAAAAAABEQBRMUGh/9oACAEBAAE/ISxc7iMEuo729SGYashFuzAEeYYavxv/2gAMAwEAAgADAAAAEBM//8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAwEBPxDoWt//xAAXEQADAQAAAAAAAAAAAAAAAAAAAREx/9oACAECAQE/ENZEf//EAB0QAQEAAgIDAQAAAAAAAAAAAAERACExoUFRscH/2gAIAQEAAT8QoC42LXgyGXjYvXWIhySifWE5gKuj3TLhCGyA8cut4Q3Sm7/c/9k=&amp;#x27;);background-size:cover;display:block&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Chinese character calligraphy.&quot; title=&quot;This is not happening any time soon.&quot; src=&quot;/static/e598d2d6f01e9cbd05c16a9158253ce5/f84cf/calligraphy.jpg&quot; srcSet=&quot;/static/e598d2d6f01e9cbd05c16a9158253ce5/27dc7/calligraphy.jpg 220w,/static/e598d2d6f01e9cbd05c16a9158253ce5/fe55e/calligraphy.jpg 440w,/static/e598d2d6f01e9cbd05c16a9158253ce5/f84cf/calligraphy.jpg 880w,/static/e598d2d6f01e9cbd05c16a9158253ce5/be3c7/calligraphy.jpg 1320w,/static/e598d2d6f01e9cbd05c16a9158253ce5/c7bbe/calligraphy.jpg 1760w,/static/e598d2d6f01e9cbd05c16a9158253ce5/e44b7/calligraphy.jpg 3888w&quot; sizes=&quot;(max-width: 880px) 100vw, 880px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0&quot; loading=&quot;lazy&quot;/&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;This is not happening any time soon.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;h2&gt;Am I fluent?&lt;/h2&gt;&lt;p&gt;The most common question I get when I tell people I’m learning Japanese is, &amp;quot;Are
+you fluent?&amp;quot; It seems like a fair question to ask, especially given the amount
+of time I’ve spent on it. A quick Google search for &amp;quot;how long does it take to be
+fluent in a language&amp;quot; will give top answers in the range of 200 to 720 hours.
+So, given I’ve spent 1,328 hours studying Japanese, surely I should be fluent
+many times over now, right?&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;No.&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;I have dedicated the next few paragraphs to explain why this isn’t the case.
+Hopefully, this will set expectations for new learners and more importantly,
+prove to myself that I’m not a horrendously slow learner.&lt;/p&gt;&lt;h3&gt;What is fluency?&lt;/h3&gt;&lt;p&gt;It’s time to question the question. &amp;#x27;Fluency&amp;#x27; is quite an abstract concept and
+open to very different interpretations. Firstly, there’s the question of which
+skills you need to acquire to say you’re fluent. For example, you might think
+&amp;#x27;fluency&amp;#x27; only refers to your ability to verbally communicate . This makes sense
+because for a long time the majority of the population were illiterate but were
+still viewed as &amp;#x27;fluent&amp;#x27; in their native language. On the other hand, not
+knowing how to read or write in your target language does feel a bit incomplete.
+There are also other aspects to communicating successfully beyond language, such
+as gestures and cultural etiquette.&lt;/p&gt;&lt;p&gt;Secondly, there’s the question of what mastery you need attain to be classed as
+&amp;#x27;fluent&amp;#x27;. Conversational fluency, in which you are able to converse on everyday
+topics (with room for mistakes), is a far cry from being able to eloquently
+express yourself on a range of complex topics.&lt;/p&gt;&lt;p&gt;I would argue that the term &amp;#x27;fluency&amp;#x27; isn’t a very helpful term for measuring
+language acquistion at all. It’s too ambiguous and highly contextual. You might
+have a near faultless exchange with a native speaker about the weather, which
+convinces them that you’re fluent. But that evening, the waiter at a restaurant
+gives you an English menu after seeing the panic on your face trying to decipher
+Japanese text. In these situations, being perceived as &amp;#x27;fluent&amp;#x27; is a fleeting
+state that you can attain or lose depending on the context and who you’re with.&lt;/p&gt;&lt;p&gt;When I think about how I’m progressing with Japanese, I always compare my
+Japanese with my English. This does set unachievable standards for acquiring
+Japanese. I already have 25 years of practice with English and still use it more
+frequently than I do Japanese. So it’s unlikely my Japanese will ever surpass my
+English. However, setting the bar at where my native language stands does make
+my North Star a lot less ambiguous. It also exposes the sheer amount of time
+learning a new language takes, which is often glossed over or outright
+fabricated by marketers trying to sell you something.&lt;/p&gt;&lt;p&gt;In the end, I can feel good about reading a book in Japanese or having a
+conversation with my mum but I don’t delude myself into thinking, &amp;quot;That’s it! I
+have mastered the language now.&amp;quot; If I had tried to read the same sorts of things
+I do in English, such as technical books, or talk about the same sorts of things
+I do in English, such as philosophy or politics, I wouldn’t know where to start.
+Even writing this same blog post in Japanese seems like an impossible feat or at
+least, would take me several more years.&lt;/p&gt;&lt;p&gt;So I guess a better answer to the question, &amp;quot;Are you fluent?&amp;quot; is, &amp;quot;It depends.&amp;quot;&lt;/p&gt;&lt;h2&gt;What else have I learned?&lt;/h2&gt;&lt;p&gt;One of the interesting things I have found about the past year is that I haven’t
+just learned Japanese. I have also developed a lot of other skills as a
+by-product.&lt;/p&gt;&lt;h3&gt;Resilience&lt;/h3&gt;&lt;p&gt;It’s worth saying that I picked up learning Japanese during the pandemic and I
+truly believe it’s what helped me not only get through it and but have one of
+the best years I have ever had. Someone recently said to me that developing
+resilience is a lot about having a clear direction of where you want to go, even
+in the midst of chaos. And that really spoke to what learning Japanese has given
+me. I had clear long term goals of what I wanted to achieve from the outset and
+I have, luckily, been able to focus on that even as the world fell apart around
+me.&lt;/p&gt;&lt;h3&gt;Time management&lt;/h3&gt;&lt;p&gt;My time management and discipline is way better than I ever thought it could be.
+I have been spending pretty much most of my free time studying, more than I ever
+did at university (when I didn’t even have a job to distract me). One of the
+things that helped me was using my timer app to time each study session. The app
+gives you a superficial rank depending on how much time you’ve clocked in during
+the week. As trivial as it sounds, the idea of gaining or losing a rank often
+pushed me to study, even on days when I was more reluctant to do so.&lt;/p&gt;&lt;h3&gt;Enjoyment&lt;/h3&gt;&lt;p&gt;To my surprise, I found that I actually enjoy studying Japanese and the slow
+grind to get marginally better at the language every day. At the beginning, I
+set my sights on the end goal, getting good at Japanese, and never considered
+that I would enjoy the journey itself. In particular, I’ve really enjoyed
+gamifying the learning process and tracking my progress across various metrics.
+I also love that I am able to peep into another world and consume untranslated
+materials, like news articles and books, that are inaccessible to most of the
+world’s population.&lt;/p&gt;&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position:relative;display:block;margin-left:auto;margin-right:auto;max-width:880px&quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/e883afdb8cd881dfd9b798aa606ae276/21b8f/robot.jpg&quot; style=&quot;display:block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom:66.81818181818181%;position:relative;bottom:0;left:0;background-image:url(&amp;#x27;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQD/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAAExM1Moyciv/8QAGRAAAgMBAAAAAAAAAAAAAAAAAQMAAhET/9oACAEBAAEFAgNhXS6MijGW4oTllf/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/AVf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAaEAEAAgMBAAAAAAAAAAAAAAABAAIQEjFR/9oACAEBAAY/Ap4mRp28q6k//8QAGxABAQEBAAMBAAAAAAAAAAAAAREAIVGBkdH/2gAIAQEAAT8hET3qUEN5+Z7yfNGKcVWzWaqeN//aAAwDAQACAAMAAAAQoB//xAAXEQADAQAAAAAAAAAAAAAAAAAAARFR/9oACAEDAQE/EG5CcP/EABcRAQEBAQAAAAAAAAAAAAAAAAEAETH/2gAIAQIBAT8QDtiX/8QAGxABAAMAAwEAAAAAAAAAAAAAAQARITFBYaH/2gAIAQEAAT8QdssaB5xNwzFaVwPYXPJs2OQy1QvpDVT7eFtDO1YWupl/J//Z&amp;#x27;);background-size:cover;display:block&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Pepper the humanoid robot.&quot; title=&quot;Pepper the humanoid robot.&quot; src=&quot;/static/e883afdb8cd881dfd9b798aa606ae276/f84cf/robot.jpg&quot; srcSet=&quot;/static/e883afdb8cd881dfd9b798aa606ae276/27dc7/robot.jpg 220w,/static/e883afdb8cd881dfd9b798aa606ae276/fe55e/robot.jpg 440w,/static/e883afdb8cd881dfd9b798aa606ae276/f84cf/robot.jpg 880w,/static/e883afdb8cd881dfd9b798aa606ae276/be3c7/robot.jpg 1320w,/static/e883afdb8cd881dfd9b798aa606ae276/c7bbe/robot.jpg 1760w,/static/e883afdb8cd881dfd9b798aa606ae276/21b8f/robot.jpg 4896w&quot; sizes=&quot;(max-width: 880px) 100vw, 880px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0&quot; loading=&quot;lazy&quot;/&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;p&gt;All in all, I highly recommend picking up a new language if you’re interested!
+In any case, it’s a good way to challenge your brain and
+&lt;a href=&quot;http://glasgowmemoryclinic.com/news/learning-language-prevent-dementia/&quot;&gt;delay the onset of Alzheimer’s and Dementia&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How I felt about inheriting £200,000]]></title><description><![CDATA[There are a bunch of feelings to disentangle when you inherit a large sum of money. This is my story of how I confronted those feelings.]]></description><link>https://helenathompson.dev/how-i-felt-about-inheriting-200000/</link><guid isPermaLink="false">https://helenathompson.dev/how-i-felt-about-inheriting-200000/</guid><pubDate>Mon, 01 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;People don’t like to talk about money, much less money that’s inherited. But as
 much as it is an extremely privileged situation to be in, there are a bunch of
 feelings to disentangle when you inherit a large sum of money. Especially if
 you’re not used to it and don’t come from a wealthy background. You have to
